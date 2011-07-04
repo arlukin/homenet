@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>SimpleLDAP</title>
+
+  <meta name="author" content="Daniel Lindh" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="imagetoolbar" content="no"/>
+
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/print.css"  media="print" />
+
+  <!-- Common jquery - Begin-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--Common jquer - End-->
+
+
+  <!-- Expandable Sticky Bar - Begin-->
+  <script src="js/expstickybar.js">
+
+  /***********************************************
+  * Expandable Sticky Bar- (c) Dynamic Drive (www.dynamicdrive.com)
+  * This notice MUST stay intact for legal use
+  * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+  ***********************************************/
+
+  </script>
+  <!-- Expandable Sticky Bar - End -->
+  
+</head>
+
+<body>
+<div id="wrap">
+
+  <!-- Header - Begin -->
+  <div id="header">
+    <div class="middle">
+      <h1><a href="index.html" title="Home">cybercow.se</a></h1>
+      <ul id="menu">
+        <li class="menupop" id="help">
+          <a href="login.html" class="submenu_link">Log in / Sign up</a>
+          <ul class="submenu">
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="forgot-password.html">Reset Your Password</a></li>
+          </ul>
+        </li>
+
+        <li class="menupop" id="help">
+          <a href="/emails/" class="submenu_link">My Account</a>
+          <ul class="submenu">            
+            <li><a href="my-profile.html">My Profile</a></li>
+            <li><a href="my-certificates.html">My certificates</a></li>
+            <li><a href="my-ldap-users.html">My LDAP users</a></li>
+            <li><a href="my-ldap-groups.html">My LDAP groups</a></li>
+            <li><a href="change-password.html">Change Password</a></li>
+            <li><a href="logout.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+      <script type="text/javascript">
+      jQuery(document).ready(function(){
+              jQuery( 'a.submenu_link' ).hover( function( i ) {
+                      jQuery( 'a.submenu_link' ).parent().removeClass( 'open' );
+                      jQuery( this ).parent().addClass( 'open' );
+              });
+              jQuery( 'li.menupop' ).hover( function(){}, function(){
+                      jQuery( this ).removeClass( 'open' );
+              });
+      });
+      </script>
+    </div>
+  </div>
+  <!-- Header - End -->
+
+  <!-- Main - Begin -->
+  <div id="main">
+    <div class="middle">
+      <div class="box-top"></div>
+      <div class="box">
+        <div id="content">
+
+          <div class="mainl1w33">            
+            <h3>For Site Owners</h3>
+            <p>Setting up SimpleSSL on your server is as easy as setting up
+              any reqular certificate. Look in <a href="developer.html">our tutorials</a>
+              to install the SimpleSSL certificate on your server.
+            </p>
+
+           <a href="signup.html" class="signup-button"><strong>Signup</strong>Unlimited SSL certificates are <em>free!</em></a>
+
+          </div>
+
+          <div class="mainl1w66">
+            <h3>Simple SSL</h3>
+            <p>Get your free SSL certificate today. Join us and use certificate
+              signed by our own CA-cert. This is a certificate that at the moment are not
+              installed in any of the major web-browsers. But it's free, and still
+              as secure as the expansive certificates that are signed by the big companies.
+              These certificates are recommended to be used on sites with a
+              controlled mass of users. Like on a developer server, or a
+              release candidate server.
+            </p>
+            
+            <h3>Simple LDAP</h3>
+            <p>Connect all your computers to our public LDAP server.</p>
+     
+          </div>
+          <span class="clear"></span>
+        </div>
+
+      </div>
+      <div class="box-bottom"></div>
+      <span class="clear"></span>
+    </div>
+  </div>
+  <!-- Main - End -->
+
+  <!-- Footer - Begin -->
+  <div id="footer">
+    <div class="top clear">
+      <div class="container">
+        <div class="middle">
+
+          <div class="block english">
+            <div class="inner">
+              <h6>Developers</h6>
+              <p>Gravatar 'APIs' require no authentication, and are all based around simple HTTP GET requests.</p>
+              <ul>
+               <li><a href="developer.html">Developers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block media">
+            <div class="inner">
+              <h6>Annonsera</h6>
+              <p>Vill du nå <b>mer än 200 000 unika</b> besökare i veckan som gillar datorer, teknik och hemelektronik? Kontakta vår mediasäljare<br/>för mer information.</p>
+              <ul>
+               <li><a href="/annonsera">Annonsinfo</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block contact">
+            <div class="inner">
+              <h6>Contact us</h6>
+              <p>Tipsa redaktionen om en intressant produkt, önska ett test eller framför andra önskemål direkt till oss.</p>
+              <ul>
+              <li><a href="about-us.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom clear">
+      <div class="container">
+        <div class="middle">
+          <div class="inner">
+            <a class="logo" href="index.html"><img src="images/amivono_200.png" alt="cybercow.se"/></a>
+            <p class="copyright">Copyright © 2010-2011 Amivono AB. All content belongs to Amivono AB and SimpleWeb</p>
+            <ul>
+            <li><a href="about-us.html">About SimpleWeb</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer - End -->
+</div><!--/ #wrap -->
+
+<!-- Stickybar - Begin -->
+<div id="stickybar" class="expstickybar">
+  <a href="#togglebar"><img src="http://arlukin.cybercow.se/images/open.gif" data-closeimage="http://arlukin.cybercow.se/images/close.gif" data-openimage="http://arlukin.cybercow.se/images/open.gif" style="border-width:0; float:right;" /></a>
+  <div style="text-align:center;">Copyright (c) 2011 <a href="http://arlukin.cybercow.se">Amivono AB</a></div>
+  <div class="resources">
+
+    <!-- Arlukin on internet - Begin -->
+    <div id="accounts">
+      <a
+      href="http://www.facebook.com/arlukin" title="Facebook"><img src="http://arlukin.cybercow.se/images/facebook.jpg" alt="Facebook"/></a><a
+      href="http://se.linkedin.com/in/therealdaniellindh" title="Linkedin"><img src="http://arlukin.cybercow.se/images/linkedin.jpg" alt="Linkedin"/></a><a
+      href="http://github.com/arlukin" title="Github"><img src="http://arlukin.cybercow.se/images/github.jpg" alt="Github"/></a><a
+      href="http://www.youtube.com/user/cybercowdotse" title="Youtube"><img src="http://arlukin.cybercow.se/images/youtube.jpg" alt="Youtube"/></a><a
+      href="https://www.flashback.org/u10518" title="Flashback"><img src="http://arlukin.cybercow.se/images/flashback.jpg" alt="Flashback"/></a><a
+      href="http://www.gravatar.com/avatar/e48848ec1ed23a7503566db114efd000.png" title="Gravatar"><img src="http://arlukin.cybercow.se/images/gravatar.jpg" alt="Gravatar"/></a><a
+      href="http://www.geni.com/people/Daniel-Lindh" title="Geni"><img src="http://arlukin.cybercow.se/images/geni.jpg" alt="Geni"/></a><a
+      href="https://launchpad.net/~daniel-cybercow" title="Launchpad"><img src="http://arlukin.cybercow.se/images/launchpad.jpg" alt="Launchpad"/></a><a
+      href="http://ubuntuforums.org/member.php?u=928011" title="Ubuntu forums"><img src="http://arlukin.cybercow.se/images/ubuntuforum.jpg" alt="Ubuntu forums"/></a><a
+      href="http://www.minhembio.com/MasterPo" title="Min hembio"><img src="http://arlukin.cybercow.se/images/minhembio.jpg" alt="Min hembio"/></a><a
+      href="https://sourceforge.net/users/arlukin" title="Sourceforge"><img src="http://arlukin.cybercow.se/images/sourceforge.jpg" alt="Sourceforge"/></a><a      
+    </div>
+    <!-- Arlukin on internet - End -->
+
+    <!-- Credit - Begin -->
+    <div id="credit"><a
+      href="http://sveaborg.cybercow.se/">Sveaborg</a>&nbsp;|&nbsp;<a
+      href="http://gberga.cybercow.se/">Gberga</a>&nbsp;|&nbsp;<a
+      href="http://photo.cybercow.se/">Photo</a>&nbsp;|&nbsp;<a
+      href="http://ngaufu.cybercow.se/">Ngau fu</a>&nbsp;|&nbsp;<a
+      href="http://nfn.cybercow.se/">Ngau Fu Nunchaku</a>&nbsp;|&nbsp;<a
+      href="http://awxire.cybercow.se/">Awxire</a>&nbsp;|&nbsp;<a
+      href="http://www.fareoffice.com/">Fareoffice</a>&nbsp;|&nbsp;<a
+      href="http://www.farepayment.com/">Farepayment</a>
+    </div>
+    <!-- Credit - End -->
+
+  </div>
+</div>
+<!-- Stickybar - End -->
+
+</body>
+</html>

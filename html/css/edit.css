@@ -1,0 +1,361 @@
+.stage {
+    width: 960px;
+    margin: 0pt auto;
+    color: #333;
+    font-family: Arial, Sans-serif;
+    font-size: 13px;
+}
+
+.stage-left {
+    width: 620px;
+    float: left;
+}
+
+.stage-left-inner {
+    padding: 0px 20px;
+}
+
+.stage-right {
+    width: 320px;
+    float: left;
+}
+
+.stage a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.stage a:hover {
+    text-decoration: underline;
+}
+
+.stage h1 {
+    font-size: 22px;
+    padding: 0px 0px 20px 30px;
+}
+
+.focus {
+    color: #444 !important;
+}
+.blur {
+    color: #999 !important;
+}
+.clear {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+}
+
+.group .head {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    padding: 0px 0px 4px 0px;
+}
+
+.label {
+    width: 150px;
+    height: 34px;
+}
+
+.label-textarea {
+    padding: 6px 0px;
+}
+
+.input-textarea {
+    padding: 4px 0px;
+}
+
+.group .input input,
+.group .input-textarea textarea {
+    font-size: 12px;
+    border: 1px solid #999;
+    padding: 4px;
+    width: 330px;
+}
+
+.group input.text-short {
+    width: 158px;
+}
+
+.group .input-textarea textarea {
+    height: 60px;
+}
+
+#description-counter {
+    color: #999;
+    font-size: 80%;
+    float: left;
+    clear: left;
+}
+.warn {
+    color: #f00 !important;
+}
+
+.group-divider {
+    height: 20px;
+}
+
+.group p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.but, .but-big {
+    float: left;
+    display: block;
+    border: 1px solid #999;
+    line-height: 12px;
+    border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    font-size: 12px;
+    color: #333 !important;
+    padding: 3px 10px;
+    background: #F2F2F2 url( http://s3.wordpress.com/wp-admin/images/white-grad.png ) repeat-x left top;
+}
+
+.but:hover, .but-big:hover {
+    border: 1px solid #333;
+    text-decoration: none !important;
+}
+
+.but-big {
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 7px 20px;
+    margin: 10px 5px 0 0;
+}
+
+a.but {
+    padding: 6px 20px;
+}
+
+#links {
+    margin-bottom: 10px;
+}
+
+.link {
+    padding: 10px 18px 0px 0px;
+    float: left;
+}
+
+.link img {
+    border: 1px solid #ccc;
+}
+
+.link .a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+.btm-form .item {
+    padding: 0px 10px 0px 0px;
+    float: left;
+}
+
+.btm-form .item .big, .btm-form .item .sml {
+    font-size: 12px;
+    border: 1px solid #999;
+    padding: 4px;
+    width: 230px;
+    color: #999;
+}
+
+.btm-form .item .sml {
+    width: 120px;
+}
+
+.btm-form .item select {
+    font-size: 12px;
+    border: 1px solid #999;
+    padding: 4px;
+    color: #333;
+    height: 25px;
+}
+
+option {
+    padding: 2px 4px;
+}
+
+.msg {
+    border: 1px solid #ff0;
+    background: #feffdf;
+    padding: 5px 10px;
+}
+
+.msg-outer {
+    padding: 0px 20px;
+}
+
+.photos {
+    padding: 5px 0px 0px 0px;
+}
+
+.photo {
+    padding: 0px 10px 10px 0px;
+    float: left;
+    position: relative;
+}
+
+.photo img {
+    border: 1px solid #ccc;
+}
+
+.narrow {
+    width: 960px !important;
+}
+
+.share a {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    background-image: url( 'http://www.gravatar.com/images/grav-share-sprite.png' );
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+.share a span {
+    font-weight: normal;
+}
+
+.profile-row {
+    padding: 6px;
+    margin: 2px 0;
+}
+
+.profile-row:hover {
+    background: #f2f2f2;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.del-profile, .del-contact {
+    float: right;
+}
+.del-profile a, .del-contact a, .del-link, .del-img {
+    background: url( 'http://www.gravatar.com/images/profile-delete-button.png' );
+    line-height: 1em;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    font-size: 1px;
+    text-decoration: none;
+}
+.del-profile a:hover, .del-contact a:hover, .del-link:hover {
+    background-position: 0 16px;
+}
+
+.del-img {
+    background-position: 0 16px;
+    display: none;
+}
+.photo a:hover .del-img {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.del-link {
+    float: left;
+}
+.link-label {
+    margin-top: 3px;
+
+}
+a.profile {
+    overflow: hidden;
+    display: block;
+}
+.small {
+    font-size: 75%;
+}
+
+#save, .save {
+    float: right;
+}
+#background-color {
+    min-width: 200px;
+}
+
+
+
+
+
+
+
+.bad-notice {
+    background: #c33;
+    color: #fff;
+    font-size: 15px;
+    list-style: none;
+    margin: 0 0 1.5em;
+    padding: 5px 7px;
+    text-align: center;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 2px #999;
+    -o-box-shadow: 0 1px 2px #999;
+    -webkit-box-shadow: 0 1px 2px #999;
+    -khtml-box-shadow: 0 1px 2px #999;
+    box-shadow: 0 1px 2px #999;
+}
+
+.stage-right-inner,
+.stage-left-inner {
+    padding: 0 !important;
+}
+
+.stage-left {
+    width: 490px !important;
+}
+
+.stage {
+    width: auto !important;
+}
+
+.stage-right {
+    float: right !important;
+}
+
+.stage h1 {
+    padding-left: 0 !important;
+}
+
+td.label {
+    width: 130px !important;
+}
+
+.group .input input,
+.group .input-textarea textarea {
+    width: 310px !important;
+}
+
+.group input.text-short {
+    width: 148px !important;
+}
+
+.btm-form .item .big, .btm-form .item .sml {
+    width: 180px !important;
+}
+
+.btm-form .item .sml {
+    width: 120px !important;
+}

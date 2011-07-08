@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>HOMENET</title>
+
+  <meta name="author" content="Daniel Lindh" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="imagetoolbar" content="no"/>
+
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />
+
+  <!-- Common jquery - Begin-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--Common jquer - End-->
+
+
+  <!-- Expandable Sticky Bar - Begin-->
+  <script src="js/expstickybar.js">
+
+  /***********************************************
+  * Expandable Sticky Bar- (c) Dynamic Drive (www.dynamicdrive.com)
+  * This notice MUST stay intact for legal use
+  * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+  ***********************************************/
+
+  </script>
+  <!-- Expandable Sticky Bar - End -->
+
+  <!-- google map - Begin -->
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=se&region=se&key=ABQIAAAAF5bIhltbkNqCPFnOWGpVORS6UKxT1WJ8urQdsBWaKBNv0q7aUxTX6tthNtdX3PXsobBzz5nUKI1WEw"></script>
+  <script type="text/javascript">
+    var map;
+    var layer;
+
+    function initialize() {
+      var myOptions = {
+        zoom: 10,
+        center: new google.maps.LatLng(10.75876, -85.37543),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+
+      map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+      layer = new google.maps.FusionTablesLayer(1096601);
+      layer.setMap(map);
+
+      layer.setQuery("select latitude FROM 1096601 WHERE elevation < 300");
+
+    }
+
+    function toggleit(sex) {
+      layer.setQuery("SELECT latitude FROM 1096601 WHERE sex = '"+ sex + "'");
+    }
+
+    function setelevation() {
+      elev=document.getElementById('elevation').value;
+      layer.setQuery("SELECT latitude FROM 1096601 WHERE elevation < " + elev);
+    }
+
+  </script>
+  <!-- google map - End -->
+
+</head>
+
+<body onload="initialize()">
+
+<div id="wrap">
+  <!-- Stickybar - Begin -->
+  <div id="stickybar" class="expstickybar">
+
+    <!-- Map search criterion - Begin -->
+    <div id="map_search">
+      <form>
+        <table border="0">
+          <tr>
+            <td><label for="livinig_space_from">Boarea</label></td>
+            <td><label>Bostadstyp</label></td>
+            <td><label>Avstånd till</label></td>
+            <td></td>
+            <td><label>Tillgång till</label></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <input id="livinig_space_from" type="input" value="" alt="from" onblur="setelevation();"></input>
+              <input id="livinig_space_to" type="input" value="" onblur="setelevation();"></input>
+            </td>
+
+            <td>
+              <input id="apartment" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="apartment" class="checkbox_label">Lägenheter</label>
+            </td>
+
+            <td>
+              <label for="meters_to_beach" class="select_label">Strand</label>
+              <select id="meters_to_beach" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <label for="meters_to_restaurant" class="select_label">Restaurang</label>
+              <select id="meters_to_restaurant" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <input id="pool" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="pool" class="checkbox_label">Pool</label>
+            </td>
+
+            <td>
+              <input id="sauna" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="sauna" class="checkbox_label">Bastu</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="min_beds">Sängar</label></td>
+
+            <td>
+              <input id="house" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="house" class="checkbox_label">Hus</label>
+            </td>
+
+            <td>
+              <label for="meters_to_lake" class="select_label">Sjö</label>
+              <select id="meters_to_lake" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <label for="meters_to_fishing" class="select_label">Fiske</label>
+              <select id="meters_to_fishing" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <input id="boat" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="boat" class="checkbox_label">Båt</label>
+            </td>
+
+            <td><label>Tillåtet med</label></td>
+          </tr>
+
+          <tr>
+            <td>
+              <input id="min_beds" type="input" value="" onblur="setelevation();"></input>
+              <input id="max_beds" type="input" value="" onblur="setelevation();"></input>
+            </td>
+
+            <td><label>Tillgång</label><br></td>
+
+            <td>
+              <label for="meters_to_sea" class="select_label">Hav</label>
+              <select id="meters_to_sea" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <label for="meters_to_skiing" class="select_label">Skidåkning</label>
+              <select id="meters_to_skiing" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <input id="motorboat" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="motorboat" class="checkbox_label">Motorbåt</label>
+            </td>
+
+            <td>
+              <input id="smoking" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="smoking" class="checkbox_label">Rökning</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="min_rooms">Rum</label></td>
+
+            <td>
+              <input id="rental" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="rental" class="checkbox_label">Uthyres</label>
+            </td>
+
+            <td>
+              <label for="meters_to_trainstation" class="select_label">Tågstation</label>
+              <select id="meters_to_trainstation" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <label for="meters_to_golf" class="select_label">Golf</label>
+              <select id="meters_to_golf" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td>
+              <input id="laundry_machine" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="laundry_machine" class="checkbox_label">Tvättmaskin</label>
+            </td>
+
+            <td>
+              <input id="animal" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="animal" class="checkbox_label">Husdjur</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input id="min_rooms" type="input" value="" onblur="setelevation();"></input>
+              <input id="max_rooms" type="input" value="" onblur="setelevation();"></input>
+            </td>
+
+            <td>
+              <input id="for_sale" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="for_sale" class="checkbox_label">Till salu</label>
+            </td>
+
+            <td>
+              <label for="meters_to_airport" class="select_label">Flygplats</label>
+              <select id="meters_to_airport" tabindex="19" onblur="setelevation();">
+                <option value="all">Alla</option>
+                <option value="100">100m</option>
+                <option value="500">500m</option>
+                <option value="1000">1km</option>
+                <option value="5000">5km</option>
+              </select>
+            </td>
+
+            <td></td>
+
+            <td>
+              <input id="dishwasher" type="checkbox" value="" onblur="setelevation();"></input>
+              <label for="dishwasher" class="checkbox_label">Diskmaskin</label>
+            </td>
+
+            <td>
+              <input type="button" value="Sök" onclick="toggleit('male');"></input>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!-- Map search criterion - End -->
+
+    <!-- Display toolbar button - Begin -->
+    <div id ="toolbar" style="width:20px; height:20px;text-align:center;margin:auto;">
+      <a href="#togglebar"><img src="images/open.gif" data-closeimage="images/close.gif" data-openimage="images/open.gif" style="border-width:0;" /></a>
+    </div>
+    <!-- Display toolbar button - End -->
+
+  </div>
+  <!-- Stickybar - End -->
+
+  <!-- Content - Begin -->
+  <div style="height: 100%; width:100%; min-width: 1258px;">
+    <div id="map_canvas" style="width: 100%;height:100%;min-width: 1258px;"></div>
+  </div>
+  <!-- Content - End -->
+
+  <!-- Footer - Begin -->
+  <div id="footer">
+    <div id="container">
+      <a id="logo" href="index.html"><img src="images/amivono_200.png" alt="cybercow.se"/></a>
+      <p id="copyright">Copyright © 2010-2011 Amivono AB. All content belongs to Amivono AB and Homenet</p>
+    </div>
+  </div>
+  <!-- Footer - End -->
+
+</div><!--/ #wrap -->
+
+</body>
+</html>

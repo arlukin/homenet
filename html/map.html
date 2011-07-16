@@ -32,8 +32,92 @@
   <!-- google map - Begin -->
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=se&region=se&key=ABQIAAAAF5bIhltbkNqCPFnOWGpVORS6UKxT1WJ8urQdsBWaKBNv0q7aUxTX6tthNtdX3PXsobBzz5nUKI1WEw"></script>
   <script type="text/javascript">
+    var table_id = 1115855;
     var map;
     var layer;
+
+    // SQL Query where clause.
+    var where;
+
+    function add_where(query, value) {
+      if (query && value) {
+        if (where) {
+          where += " AND ";
+        }
+
+        if (value == true) {
+          value = 1;
+        }        
+
+        where += query.replace("$", value);
+      }
+    }
+
+    function get_where() {
+      where = "";
+      
+      add_where("livinig_space >= $", document.getElementById("livinig_space_from").value);
+      add_where("livinig_space <= $", document.getElementById("livinig_space_to").value);
+
+      add_where("total_beds >= $", document.getElementById("min_beds").value);
+      add_where("total_beds <= $", document.getElementById("max_beds").value);
+
+      add_where("total_rooms >= $", document.getElementById("min_rooms").value);
+      add_where("total_rooms <= $", document.getElementById("max_rooms").value);
+
+      add_where("meters_to_beach <= $", document.getElementById("meters_to_beach").value);
+      add_where("meters_to_lake <= $", document.getElementById("meters_to_lake").value);
+      add_where("meters_to_restaurant <= $", document.getElementById("meters_to_restaurant").value);
+      add_where("meters_to_fishing <= $", document.getElementById("meters_to_fishing").value);
+      add_where("meters_to_sea <= $", document.getElementById("meters_to_sea").value);
+      add_where("meters_to_skiing <= $", document.getElementById("meters_to_skiing").value);
+      add_where("meters_to_trainstation <= $", document.getElementById("meters_to_trainstation").value);
+      add_where("meters_to_golf <= $", document.getElementById("meters_to_golf").value);
+      add_where("meters_to_airport <= $", document.getElementById("meters_to_airport").value);
+
+      add_where("apartment == $", document.getElementById("apartment").checked);
+      add_where("house == $", document.getElementById("house").checked);
+
+      add_where("rental == $", document.getElementById("rental").checked);
+      add_where("for_sale == $", document.getElementById("for_sale").checked);
+
+      add_where("pool_available = $", document.getElementById("pool").checked);
+      add_where("boat_available = $", document.getElementById("boat").checked);
+      add_where("motorboat_available = $", document.getElementById("motorboat").checked);
+      add_where("laundry_machine_available = $", document.getElementById("laundry_machine").checked);
+      add_where("dishwasher_available = $", document.getElementById("dishwasher").checked);
+      add_where("sauna_available = $", document.getElementById("sauna").checked);
+
+      add_where("smoking_allowed = $", document.getElementById("smoking").checked);
+      add_where("animal_allowed = $", document.getElementById("animal").checked);
+
+      if (where) {
+        where = " WHERE " + where;
+      }      
+
+      return where;
+    }
+
+    function is_new_where() {
+      old_where = where;
+      new_where = get_where();
+      if (old_where == new_where)
+        return false;
+      else
+        return true;
+    }
+
+    function get_query() {
+      var query = "select latitude FROM 1115855" + get_where();
+      //alert(query);
+      return query;
+    }
+
+    function search() {      
+      if (is_new_where()) {
+        layer.setQuery(get_query());
+      }
+    }
 
     function initialize() {
       var myOptions = {
@@ -44,20 +128,10 @@
 
       map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-      layer = new google.maps.FusionTablesLayer(1096601);
+      layer = new google.maps.FusionTablesLayer(1115855);
       layer.setMap(map);
 
-      layer.setQuery("select latitude FROM 1096601 WHERE elevation < 300");
-
-    }
-
-    function toggleit(sex) {
-      layer.setQuery("SELECT latitude FROM 1096601 WHERE sex = '"+ sex + "'");
-    }
-
-    function setelevation() {
-      elev=document.getElementById('elevation').value;
-      layer.setQuery("SELECT latitude FROM 1096601 WHERE elevation < " + elev);
+      search()
     }
 
   </script>
@@ -78,7 +152,7 @@
           <tr>
             <td><label for="livinig_space_from">Boarea</label></td>
             <td><label>Bostadstyp</label></td>
-            <td><label>Avstånd till</label></td>
+            <td><label>Max avstånd till</label></td>
             <td></td>
             <td><label>Tillgång till</label></td>
             <td></td>
@@ -86,19 +160,19 @@
 
           <tr>
             <td>
-              <input id="livinig_space_from" type="input" value="" alt="from" onblur="setelevation();"></input>
-              <input id="livinig_space_to" type="input" value="" onblur="setelevation();"></input>
+              <input id="livinig_space_from" type="input" value="" alt="from" onblur="search();"></input>
+              <input id="livinig_space_to" type="input" value="" onblur="search();"></input>
             </td>
 
             <td>
-              <input id="apartment" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="apartment" type="checkbox" value="" onclick="search();"></input>
               <label for="apartment" class="checkbox_label">Lägenheter</label>
             </td>
 
             <td>
               <label for="meters_to_beach" class="select_label">Strand</label>
-              <select id="meters_to_beach" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_beach" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -108,8 +182,8 @@
 
             <td>
               <label for="meters_to_restaurant" class="select_label">Restaurang</label>
-              <select id="meters_to_restaurant" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_restaurant" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -118,28 +192,28 @@
             </td>
 
             <td>
-              <input id="pool" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="pool" type="checkbox" value="" onclick="search();"></input>
               <label for="pool" class="checkbox_label">Pool</label>
             </td>
 
             <td>
-              <input id="sauna" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="sauna" type="checkbox" value="" onclick="search();"></input>
               <label for="sauna" class="checkbox_label">Bastu</label>
             </td>
           </tr>
 
           <tr>
-            <td><label for="min_beds">Sängar</label></td>
+            <td><label for="min_beds">Sängplatser</label></td>
 
             <td>
-              <input id="house" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="house" type="checkbox" value="" onclick="search();"></input>
               <label for="house" class="checkbox_label">Hus</label>
             </td>
 
             <td>
               <label for="meters_to_lake" class="select_label">Sjö</label>
-              <select id="meters_to_lake" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_lake" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -149,8 +223,8 @@
 
             <td>
               <label for="meters_to_fishing" class="select_label">Fiske</label>
-              <select id="meters_to_fishing" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_fishing" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -159,7 +233,7 @@
             </td>
 
             <td>
-              <input id="boat" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="boat" type="checkbox" value="" onclick="search();"></input>
               <label for="boat" class="checkbox_label">Båt</label>
             </td>
 
@@ -168,16 +242,16 @@
 
           <tr>
             <td>
-              <input id="min_beds" type="input" value="" onblur="setelevation();"></input>
-              <input id="max_beds" type="input" value="" onblur="setelevation();"></input>
+              <input id="min_beds" type="input" value="" onblur="search();"></input>
+              <input id="max_beds" type="input" value="" onblur="search();"></input>
             </td>
 
-            <td><label>Tillgång</label><br></td>
+            <td><label>Tillgänglighet</label><br></td>
 
             <td>
               <label for="meters_to_sea" class="select_label">Hav</label>
-              <select id="meters_to_sea" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_sea" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -187,8 +261,8 @@
 
             <td>
               <label for="meters_to_skiing" class="select_label">Skidåkning</label>
-              <select id="meters_to_skiing" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_skiing" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -197,12 +271,12 @@
             </td>
 
             <td>
-              <input id="motorboat" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="motorboat" type="checkbox" value="" onclick="search();"></input>
               <label for="motorboat" class="checkbox_label">Motorbåt</label>
             </td>
 
             <td>
-              <input id="smoking" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="smoking" type="checkbox" value="" onclick="search();"></input>
               <label for="smoking" class="checkbox_label">Rökning</label>
             </td>
           </tr>
@@ -211,14 +285,14 @@
             <td><label for="min_rooms">Rum</label></td>
 
             <td>
-              <input id="rental" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="rental" type="checkbox" value="" onclick="search();"></input>
               <label for="rental" class="checkbox_label">Uthyres</label>
             </td>
 
             <td>
               <label for="meters_to_trainstation" class="select_label">Tågstation</label>
-              <select id="meters_to_trainstation" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_trainstation" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -228,8 +302,8 @@
 
             <td>
               <label for="meters_to_golf" class="select_label">Golf</label>
-              <select id="meters_to_golf" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_golf" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -238,31 +312,31 @@
             </td>
 
             <td>
-              <input id="laundry_machine" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="laundry_machine" type="checkbox" value="" onclick="search();"></input>
               <label for="laundry_machine" class="checkbox_label">Tvättmaskin</label>
             </td>
 
             <td>
-              <input id="animal" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="animal" type="checkbox" value="" onclick="search();"></input>
               <label for="animal" class="checkbox_label">Husdjur</label>
             </td>
           </tr>
 
           <tr>
             <td>
-              <input id="min_rooms" type="input" value="" onblur="setelevation();"></input>
-              <input id="max_rooms" type="input" value="" onblur="setelevation();"></input>
+              <input id="min_rooms" type="input" value="" onblur="search();"></input>
+              <input id="max_rooms" type="input" value="" onblur="search();"></input>
             </td>
 
             <td>
-              <input id="for_sale" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="for_sale" type="checkbox" value="" onclick="search();"></input>
               <label for="for_sale" class="checkbox_label">Till salu</label>
             </td>
 
             <td>
               <label for="meters_to_airport" class="select_label">Flygplats</label>
-              <select id="meters_to_airport" tabindex="19" onblur="setelevation();">
-                <option value="all">Alla</option>
+              <select id="meters_to_airport" tabindex="19" onchange="search();">
+                <option value="">Alla</option>
                 <option value="100">100m</option>
                 <option value="500">500m</option>
                 <option value="1000">1km</option>
@@ -273,12 +347,12 @@
             <td></td>
 
             <td>
-              <input id="dishwasher" type="checkbox" value="" onblur="setelevation();"></input>
+              <input id="dishwasher" type="checkbox" value="" onclick="search();"></input>
               <label for="dishwasher" class="checkbox_label">Diskmaskin</label>
             </td>
 
             <td>
-              <input type="button" value="Sök" onclick="toggleit('male');"></input>
+              <input type="button" value="Sök" onclick="search();"></input>
             </td>
           </tr>
         </table>

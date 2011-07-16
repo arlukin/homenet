@@ -1,0 +1,185 @@
+body {
+  background: #F0E9DF;
+  color: black;  
+}
+
+#wrap {
+  width: 950px;
+  margin: auto;
+}
+
+/**
+
+GENERAL
+
+**/
+
+.border {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  -webkit-box-shadow: 1px 1px 0 #B4AFA7;
+  -moz-box-shadow: 1px 1px 0 #B4AFA7;
+  box-shadow: 1px 1px 0 #B4AFA7;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/**
+
+HEADER
+
+**/
+
+#header {  
+  width: 950px;
+  height: 20px;
+}
+
+/**
+
+LEFT COLUMN
+
+**/
+#leftcolumn {
+  width: 190px;
+  float: left;
+  margin-right: 20px;
+
+  position: fixed;
+  top: 30px;
+  height: 100%;
+}
+
+#leftcolumn .inner {
+  background: #F4EFE7;
+  margin: 0px;  
+  padding: 5px;
+
+  padding: 5px 0 11px 18px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+#leftcolumn h2 {
+  font-size: 1.4em;
+  letter-spacing: -0.02em;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#leftcolumn ul {
+  list-style-type: none;
+  width: 663px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#leftcolumn li {
+  margin: 0px;
+  padding: 0px;
+  padding-left:10px;
+}
+
+#leftcolumn a {
+  font-size: 100%;
+  line-height: 22px;
+  font-family: Verdana,"Lucida Grande",Tahoma,Arial,Sans-Serif;
+
+  color: #586069;
+  text-decoration: none;
+}
+
+#leftcolumn a:hover {
+  text-decoration: underline;
+}
+
+/**
+
+CONTENT - FLAG
+
+**/
+
+#leftcolumn .flag {
+  height: 10px;
+  padding-left: 37px;
+  background: 13px center no-repeat #F8F4EF;
+  margin-bottom: 19px;
+  -webkit-box-shadow: 0 10px 12px rgba(104, 104, 104, 0.17) inset,1px 1px 0 #B4AFA7;
+  -moz-box-shadow: 0 10px 12px rgba(104, 104, 104, 0.17) inset,1px 1px 0 #B4AFA7;
+  box-shadow: 0 10px 12px rgba(104, 104, 104, 0.17) inset,1px 1px 0 #B4AFA7;
+
+  display: none;
+}
+
+#leftcolumn .flag li {
+  float:left;
+}
+
+/**
+
+CONTENT
+
+**/
+
+#content {
+  width: 740px;
+  float: right;
+  line-height: 1.6em;
+}
+
+#content .inner {
+  background-color: #F8F4EF;
+  margin-bottom: 50px;
+  padding: 5px 50px 15px 50px;
+  font-family: georgia,serif;
+  font-size: 110%;
+}
+
+#content h1, #content h2 {
+  font-weight:normal;
+  letter-spacing:-.03em;
+  padding:0;
+  margin: 1.2ex 0 0;
+}
+
+#content h1 {
+  font-size:2em;
+}
+
+#content h2 {
+  font-size:1.5em;
+}
+
+#content p {
+  margin-left: .4em;
+}
+
+#content img {
+  float:right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#content blockquote {
+  font-style: italic;
+  color: #2C2C2C;
+  background: #F1F5F7;
+  padding: 1ex 2em 2ex;
+}
+
+/**
+
+FOOTER
+
+**/
+
+#footer {
+  background: #0f0;
+  width: 800px;
+  height: 100px;
+  clear:both;
+  display: none;
+}

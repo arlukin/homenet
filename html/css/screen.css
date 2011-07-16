@@ -108,6 +108,72 @@ body
 
 /*****************************************************************************/
 /*
+/* MAP Info window
+/*
+/*****************************************************************************/
+/*#.googft-info-window*/
+
+.googft-info-window .thumbnail {
+  width:49%;
+  height:200px;
+  margin: 0px 5px 0px 0px;
+  float:left;
+  overflow: hidden;
+}
+
+.googft-info-window .thumbnail img {
+  width: 100%;
+  display:block
+}
+
+.googft-info-window .attributes {
+  width:50%;
+  height:200px;
+  float:right;
+}
+
+.googft-info-window .attributes,
+.googft-info-window .attributes dl, .googft-info-window .attributes dt, .googft-info-window .attributes dd {
+  margin: 0px;
+  padding:0px;
+}
+
+.googft-info-window .attributes dt {
+  float:left;  
+  font-weight:bold;
+  width:92px;
+}
+
+.googft-info-window .attributes dd {  
+  text-align:left;  
+}
+ 
+.googft-info-window .desc {
+  width:100%;
+  clear: both;
+}
+
+.googft-info-window .area {
+  width:100%;
+  margin: 0px;
+  padding: 0px
+}
+
+.googft-info-window .area img
+{
+  display:inline;
+  margin: 0px 2px 0px 0px;
+}
+
+.googft-info-window .area li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+/*****************************************************************************/
+/*
 /* Header
 /*
 /*****************************************************************************/

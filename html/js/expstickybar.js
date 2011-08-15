@@ -4,7 +4,8 @@
 * Visit http://www.dynamicdrive.com/ for full source code
 */
 
-jQuery.noConflict()
+// Crashes masonry.min.js
+// jQuery.noConflict()
 
 function expstickybar(usersetting){
   var setting=jQuery.extend({position:'bottom', peekamount:30, revealtype:'mouseover', speed:200}, usersetting)

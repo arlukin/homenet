@@ -16,7 +16,6 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!--Common jquer - End-->
 
-
   <!-- Expandable Sticky Bar - Begin-->
   <script src="js/expstickybar.js">
 
@@ -91,7 +90,7 @@
       add_where("smoking_allowed = $", document.getElementById("smoking").checked);
       add_where("animal_allowed = $", document.getElementById("animal").checked);
 
-      if (where) {
+      if (where)¬†{
         where = " WHERE " + where;
       }      
 
@@ -152,9 +151,9 @@
           <tr>
             <td><label for="livinig_space_from">Boarea</label></td>
             <td><label>Bostadstyp</label></td>
-            <td><label>Max avstånd till</label></td>
+            <td><label>Max avst√•nd till</label></td>
             <td></td>
-            <td><label>Tillgång till</label></td>
+            <td><label>Tillg√•ng till</label></td>
             <td></td>
           </tr>
 
@@ -166,7 +165,7 @@
 
             <td>
               <input id="apartment" type="checkbox" value="" onclick="search();"></input>
-              <label for="apartment" class="checkbox_label">Lägenheter</label>
+              <label for="apartment" class="checkbox_label">L√§genheter</label>
             </td>
 
             <td>
@@ -203,7 +202,7 @@
           </tr>
 
           <tr>
-            <td><label for="min_beds">Sängplatser</label></td>
+            <td><label for="min_beds">S√§ngplatser</label></td>
 
             <td>
               <input id="house" type="checkbox" value="" onclick="search();"></input>
@@ -211,7 +210,7 @@
             </td>
 
             <td>
-              <label for="meters_to_lake" class="select_label">Sjö</label>
+              <label for="meters_to_lake" class="select_label">Sj√∂</label>
               <select id="meters_to_lake" tabindex="19" onchange="search();">
                 <option value="">Alla</option>
                 <option value="100">100m</option>
@@ -234,10 +233,10 @@
 
             <td>
               <input id="boat" type="checkbox" value="" onclick="search();"></input>
-              <label for="boat" class="checkbox_label">Båt</label>
+              <label for="boat" class="checkbox_label">B√•t</label>
             </td>
 
-            <td><label>Tillåtet med</label></td>
+            <td><label>Till√•tet med</label></td>
           </tr>
 
           <tr>
@@ -246,7 +245,7 @@
               <input id="max_beds" type="input" value="" onblur="search();"></input>
             </td>
 
-            <td><label>Tillgänglighet</label><br></td>
+            <td><label>Tillg√§nglighet</label><br></td>
 
             <td>
               <label for="meters_to_sea" class="select_label">Hav</label>
@@ -260,7 +259,7 @@
             </td>
 
             <td>
-              <label for="meters_to_skiing" class="select_label">Skidåkning</label>
+              <label for="meters_to_skiing" class="select_label">Skid√•kning</label>
               <select id="meters_to_skiing" tabindex="19" onchange="search();">
                 <option value="">Alla</option>
                 <option value="100">100m</option>
@@ -272,12 +271,12 @@
 
             <td>
               <input id="motorboat" type="checkbox" value="" onclick="search();"></input>
-              <label for="motorboat" class="checkbox_label">Motorbåt</label>
+              <label for="motorboat" class="checkbox_label">Motorb√•t</label>
             </td>
 
             <td>
               <input id="smoking" type="checkbox" value="" onclick="search();"></input>
-              <label for="smoking" class="checkbox_label">Rökning</label>
+              <label for="smoking" class="checkbox_label">R√∂kning</label>
             </td>
           </tr>
 
@@ -290,7 +289,7 @@
             </td>
 
             <td>
-              <label for="meters_to_trainstation" class="select_label">Tågstation</label>
+              <label for="meters_to_trainstation" class="select_label">T√•gstation</label>
               <select id="meters_to_trainstation" tabindex="19" onchange="search();">
                 <option value="">Alla</option>
                 <option value="100">100m</option>
@@ -313,7 +312,7 @@
 
             <td>
               <input id="laundry_machine" type="checkbox" value="" onclick="search();"></input>
-              <label for="laundry_machine" class="checkbox_label">Tvättmaskin</label>
+              <label for="laundry_machine" class="checkbox_label">Tv√§ttmaskin</label>
             </td>
 
             <td>
@@ -352,7 +351,7 @@
             </td>
 
             <td>
-              <input type="button" value="Sök" onclick="search();"></input>
+              <input type="button" value="S√∂k" onclick="search();"></input>
             </td>
           </tr>
         </table>
@@ -379,7 +378,7 @@
   <div id="footer">
     <div id="container">
       <a id="logo" href="index.html"><img src="images/amivono_200.png" alt="cybercow.se"/></a>
-      <p id="copyright">Copyright © 2010-2011 Amivono AB. All content belongs to Amivono AB and Homenet</p>
+      <p id="copyright">Copyright ¬© 2010-2011 Amivono AB. All content belongs to Amivono AB and Homenet</p>
     </div>
   </div>
   <!-- Footer - End -->

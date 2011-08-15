@@ -1,0 +1,239 @@
+/**
+Stylesheet: Demo.css
+	CSS for Slideshow demos.
+
+License:
+	Creative Commons license.
+
+Copyright:
+	Copyright (c) 2008 [Aeron Glemann](http://www.electricprism.com/aeron/).
+*/
+
+.slideshow {
+  background: url(slideshow.gif) no-repeat;
+  height: 548px;
+	width: 560px;
+}
+.slideshow-captions {
+	background: #FFF;
+	bottom: 109px;
+	color: #000;
+	font: normal 12px/20px Arial, sans-serif;
+	left: 30px;
+	text-align: center;
+	width: 500px;
+}
+.slideshow-captions-visible {
+	height: 20px;
+	opacity: 1;
+}
+.slideshow-controller {
+	margin: -44px 0 0 -119px;
+	top: 50%;
+}
+.slideshow-images {
+	left: 30px;
+	height: 400px;
+	top: 39px;
+	width: 500px;
+}
+.slideshow-images img {
+	position: static;
+}
+.slideshow-thumbnails {
+	bottom: 0;
+	height: 85px;
+	left: 20px;
+	overflow: auto;
+	width: 520px;
+}
+.slideshow-thumbnails ul {
+	height: 60px;
+	width: 900px;
+}
+.slideshow-thumbnails li {
+	margin: 0 5px 0 0;
+}
+.slideshow-thumbnails a {
+	background: url(thumbnails-a.gif);
+	float: left;
+	opacity: .5;
+	padding: 10px;
+}
+.slideshow-thumbnails a img {
+	border: 0;
+}
+.slideshow-thumbnails .overlay {
+	bottom: 25px;
+	height: 60px;
+	position: absolute;
+	width: 30px;
+	z-index: 10000;
+}
+.slideshow-thumbnails .overlay.a {
+	background: url(thumbnails-a.png);
+	left: 0;
+}
+.slideshow-thumbnails .overlay.b {
+	background: url(thumbnails-b.png);
+	right: 0;
+}
+
+/* CSS-based transitions: Infinite effects */
+
+.slideshow-alternate-images {
+	left: 30px;
+	height: 400px;
+	top: 39px;
+	width: 500px;
+}
+.slideshow-alternate-images img { 
+	float: left;
+}	
+.slideshow-alternate-images-visible { 
+	left: 0; 
+	opacity: 1; 
+	top: 0; 
+}	
+.slideshow-alternate-images-next { 
+	left: 0; 
+	opacity: 0; 
+	top: 400px; 
+}
+.slideshow-alternate-images-prev { 
+	left: 0; 
+	opacity: 0; 
+	top: -400px; 
+}
+
+/* Thumbnails: Intelligent and auto-scrolling */
+
+.slideshow-alternate-thumbnails {
+	height: 421px;
+	position: absolute;
+	right: -64px;
+	top: 28px;
+	width: 70px;
+}
+.slideshow-alternate-thumbnails * {
+	margin: 0;
+	padding: 0;
+}
+.slideshow-alternate-thumbnails ul {
+	height: 500px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 70px;
+}
+.slideshow-alternate-thumbnails li {
+	float: left;
+	list-style: none;
+	margin: 0 0 5px 0;
+	position: relative;
+}
+.slideshow-alternate-thumbnails a {
+	background: url(thumbnails-a.gif);
+	display: block;
+	opacity: .5;
+	padding: 10px;
+	position: relative; 
+}
+.slideshow-alternate-thumbnails a:hover {
+	opacity: 1 !important;
+}
+.slideshow-alternate-thumbnails a img {
+	border: 0;
+}
+.slideshow-alternate-thumbnails img {
+	display: block;
+}
+.slideshow-alternate-thumbnails-active {
+	opacity: 1;
+}
+.slideshow-alternate-thumbnails-inactive {
+	opacity: .5;
+}
+.slideshow-alternate-thumbnails .overlay {
+	left: 0;
+	height: 30px;
+	position: absolute;
+	width: 100%;
+	z-index: 10000;
+}
+.slideshow-alternate-thumbnails .overlay.a {
+	background: url(vertical-thumbnails-a.png);
+	top: 0;
+}
+.slideshow-alternate-thumbnails .overlay.b {
+	background: url(vertical-thumbnails-b.png);
+	bottom: 0;
+}
+
+/* Controller: Accessible and style-able */
+
+.slideshow-alternate-controller {
+	background: url(controller.png) no-repeat;
+	height: 42px;
+	left: 50%;
+	margin: -21px 0 0 -119px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 238px;
+	z-index: 10000;
+}
+.slideshow-alternate-controller * {
+	margin: 0;
+	padding: 0;
+}
+.slideshow-alternate-controller-hidden { 
+	margin-top: -200px;
+	opacity: 0;
+}
+.slideshow-alternate-controller-visible {
+	margin-top: -42px;
+	opacity: 1;
+}
+.slideshow-alternate-controller a {
+	cursor: pointer;
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+}
+.slideshow-alternate-controller a.active {
+	background-position: 0 18px;
+}
+.slideshow-alternate-controller li {
+	list-style: none;
+}
+.slideshow-alternate-controller li.first a {
+	background-image: url(controller-first.gif);
+	left: 33px;
+	width: 19px;
+}
+.slideshow-alternate-controller li.last a {
+	background-image: url(controller-last.gif);
+	left: 186px;
+	width: 19px;
+}
+.slideshow-alternate-controller li.next a {
+	background-image: url(controller-next.gif);
+	left: 145px;
+	width: 28px;
+}
+.slideshow-alternate-controller li.pause a {
+	background-image: url(controller-pause.gif);
+	left: 109px;
+	width: 20px;
+}
+.slideshow-alternate-controller li.play a {
+	background-image: url(controller-play.gif);
+}
+.slideshow-alternate-controller li.prev a {
+	background-image: url(controller-prev.gif);
+	left: 65px;
+	width: 28px;
+}

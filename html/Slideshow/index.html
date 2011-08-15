@@ -1,0 +1,33 @@
+<!doctype html>	
+<html>
+<head>
+	<title>Slideshow 2!</title>
+	<meta charset="utf-8">
+	<meta name="author" content="[Aeron Glemann](http://www.electricprism.com/aeron/)">
+	<link rel="stylesheet" href="/slideshow/css/slideshow.css">
+	<style>
+		.slideshow { float: left; margin: 50px; }
+	</style>
+	<script src="/slideshow/js/mootools-1.3.2-core.js"></script>
+	<script src="/slideshow/js/mootools-1.3.2.1-more.js"></script>
+	<script src="/slideshow/js/slideshow.js"></script>
+	<script src="/slideshow/js/slideshow.flash.js"></script>
+	<script src="/slideshow/js/slideshow.fold.js"></script>
+	<script src="/slideshow/js/slideshow.kenburns.js"></script>
+	<script src="/slideshow/js/slideshow.push.js"></script>
+	<script>
+		window.addEvent('domready', function(){
+			var data = { '1.jpg': { caption: 'This is my text, this is my text.' }, '2.jpg': { caption: '2' }, '3.jpg': { caption: '3' }, '4.jpg': { caption: '4' }};
+
+			//new Slideshow.KenBurns('gallery', data, { duration: 1500, height: 300, hu: 'images/', width: 400 });
+			new Slideshow.Push('gallery', data, { height: 300, hu: '/slideshow/images/', transition: 'back:in:out', width: 400 });
+		});
+	</script>
+</head>
+<body>
+	<div id="gallery" class="slideshow">
+		<img src="images/1.jpg" alt="1">
+	</div>
+
+</body>
+</html>

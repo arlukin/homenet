@@ -96,3 +96,12 @@ var mystickybar=new expstickybar({
   externalcontent:'', //path to sticky bar content file on your server, or "" if content is defined inline on the page
   speed:200 //duration of animation (in millisecs)
 })
+
+var mystickyfooter=new expstickybar({
+  id: "footer", //id of sticky bar DIV
+  position:'bottom', //'top' or 'bottom'
+  revealtype:'mouseover', //'mouseover' or 'manual'
+  peekamount: 45, //number of pixels to reveal when sticky bar is closed
+  externalcontent:'', //path to sticky bar content file on your server, or "" if content is defined inline on the page
+  speed:200 //duration of animation (in millisecs)
+})

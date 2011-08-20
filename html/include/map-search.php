@@ -12,6 +12,19 @@
             <td></td>
             <td><label>Tillgång till</label></td>
             <td></td>
+            <td rowspan="6">
+              <label for="order_by" class="select_label">Sortera på</label>              
+              
+              <select id="order_by" tabindex="19" onchange="search();">
+                <option value="price">Pris</option>
+                <option value="area">Område</option>
+              </select>
+
+              <br/>
+ 
+              <input type="button" value="Bildsök" onclick="search();"></input><br/>
+              <input type="button" value="Kartsök" onclick="search();"></input>
+            </td>
           </tr>
 
           <tr>
@@ -207,8 +220,7 @@
               <label for="dishwasher" class="checkbox_label">Diskmaskin</label>
             </td>
 
-            <td>
-              <input type="button" value="Sök" onclick="search();"></input>
+            <td>              
             </td>
           </tr>
         </table>

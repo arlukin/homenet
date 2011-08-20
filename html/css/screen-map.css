@@ -50,13 +50,13 @@ body
   border-bottom: 1px solid #C4C4C4;
   margin: 5px auto 5px auto;
   padding: 5px;
-  width:800px;
+  width: 940px;
 }
 
 #map_search td
 {
   padding: 0px 5px 0px 5px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 #map_search input, #map_search select, #map_search input[type="checkbox"]
@@ -75,6 +75,12 @@ body
 #map_search input
 {
   width: 80px;
+}
+
+#map_search input[type="button"]
+{
+  float: right;
+  width: 100px;
 }
 
 #map_search .checkbox_label

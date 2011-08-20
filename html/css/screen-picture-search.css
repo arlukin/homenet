@@ -1,0 +1,102 @@
+/**
+
+picture-search
+
+**/
+
+#wrap,
+#content,
+#content .inner
+{
+  width: auto;
+  margin: 8px 5px 65px 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#content .picture-search
+{
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  height: 115px;
+
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 1px 0 #B4AFA7;
+  -moz-box-shadow: 1px 1px 0 #B4AFA7;
+  box-shadow: 1px 1px 0 #B4AFA7;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#content .picture-search img {
+  width: 157px;
+  height: 115px;
+  border: 1px solid black;
+}
+
+/*****************************************************************************/
+/*
+/* Picture Search Info window
+/*
+/*****************************************************************************/
+
+.ui-tooltip, .qtip {
+  max-width: 800px;
+}
+
+.info-window {
+  padding: 5px;  
+}
+
+.info-window .desc
+{
+  width: 300px;
+}
+.info-window .attributes
+{
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+
+.info-window .attributes dt,
+.info-window .attributes dd {
+  margin: 0px;
+  padding: 0px;
+}
+
+.info-window .attributes dt {
+  float: left;
+  font-weight: bold;
+  width: 92px;
+}
+
+.info-window .attributes dd {
+  text-align: left;
+}
+
+.info-window .area {
+  margin: 0px;
+  padding: 0px
+}
+
+.info-window .area li
+{
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 10px;
+  width: 30px;
+}
+
+.info-window .area li img
+{
+  display: inline;  
+  margin: 0px 2px 5px 0px;  
+}
+
+.ui-tooltip-green .ui-tooltip-content
+{
+  background-color:white;
+}

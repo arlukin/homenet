@@ -9,7 +9,7 @@ TODO
 
 * Create nice looking map popup page.
 
-* Create house page ie. homenet.com/stuguthyrning_i_smŒland_ab/sveaborg
+* Create house page ie. homenet.com/stuguthyrning_i_smï¿½land_ab/sveaborg
   homenet.com/sveaborg
   sveaborg.home.net
 
@@ -50,6 +50,12 @@ TODO
   http://www.sitepoint.com/fancy-form-design-css-7/
   http://24ways.org/2009/have-a-field-day-with-html5-forms
 
+* Validate form
+  http://craigsworks.com/projects/qtip2/demos/#validation
+  or like github
+
+
+
 * Add http://www.olark.com/blog/
 
 * Snyggare knappar.
@@ -67,13 +73,13 @@ TODO
   http://coding.smashingmagazine.com/2009/04/08/from-table-hell-to-div-hell/
   http://www.alistapart.com/articles/prettyaccessibleforms
 
-* EngŒng per Œr skicka mail/ringa alla husŠgare och be dom uppdatera sin annons.
+* Engï¿½ng per ï¿½r skicka mail/ringa alla husï¿½gare och be dom uppdatera sin annons.
 
-* En area dŠr man kan lŠgga in en kommentar om vilka andra sidor som man
-  lagt ut sin annons pŒ.
+* En area dï¿½r man kan lï¿½gga in en kommentar om vilka andra sidor som man
+  lagt ut sin annons pï¿½.
 
-* Sammarbeta med andra siter, och lŠgg in annons automatiskt hos dom.
-  FrŒga anvŠndaren om han vill det, och om han vill betala fšr det.
+* Sammarbeta med andra siter, och lï¿½gg in annons automatiskt hos dom.
+  Frï¿½ga anvï¿½ndaren om han vill det, och om han vill betala fï¿½r det.
 
 * MAMP
   http://localhost:8888/MAMP/?language=English
@@ -118,9 +124,9 @@ TODO
   http://codeigniter.com/
 
 * DATABAS
-  Ett hus ska kunna ligga pŒ flera uthyrnings fšretag.
-  Hus Šgaren Šr den som har tillgŒng till att regigera sitt hus.
-  Uthyrningsfšretagen kan i vissa fall gŒ in och redigera dessa hus ocksŒ.
+  Ett hus ska kunna ligga pï¿½ flera uthyrnings fï¿½retag.
+  Hus ï¿½garen ï¿½r den som har tillgï¿½ng till att regigera sitt hus.
+  Uthyrningsfï¿½retagen kan i vissa fall gï¿½ in och redigera dessa hus ocksï¿½.
 
 * Add calender page to http://localhost:8888/sveaborg.html.
 * Add price page to http://localhost:8888/sveaborg.html.
@@ -150,9 +156,9 @@ TODO
 
 * Add this and from databae to http://localhost:8888/sveaborg.html.
 Bas:
-  El ingŒr
- Husdjur ej tillŒtna
- Rškning ej tillŒten
+  El ingï¿½r
+ Husdjur ej tillï¿½tna
+ Rï¿½kning ej tillï¿½ten
  Separata sovrum
  TV
 
@@ -164,27 +170,27 @@ Bad/toalett:
 
 
 Mat:
-  Matlagningsmšjligheter
+  Matlagningsmï¿½jligheter
  Frys
- KylskŒp
+ Kylskï¿½p
 
 
-TvŠttmšjligheter:
-  TvŠttmaskin
+Tvï¿½ttmï¿½jligheter:
+  Tvï¿½ttmaskin
 
 
-…vrigt:
-  …ppen spis
- MobiltelefontŠckning
+ï¿½vrigt:
+  ï¿½ppen spis
+ Mobiltelefontï¿½ckning
 
 
 Utomhus:
   Veranda
- Uteplats med utemšbler
+ Uteplats med utemï¿½bler
  Utegrill
- TrŠdgŒrd
+ Trï¿½dgï¿½rd
 
-* Add tipsa en vŠn.
+* Add tipsa en vï¿½n.
 
 * dl dt dd tutorial
   http://www.maxdesign.com.au/articles/definition/
@@ -195,14 +201,13 @@ Utomhus:
 * Icons
   http://www.1stwebdesigner.com/freebies/e-commerce-icons/
 
-
-
-
+* Implement this
+  http://craigsworks.com/projects/qtip2/docs/
 
 * Horizontal menus with css
   http://www.alistapart.com/articles/horizdropdowns/
 
-* Tabellen, anvŠnd vid DT design
+* Tabellen, anvï¿½nd vid DT design
   http://www.maxdesign.com.au/articles/inline/
   8. Rounded courner
     http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs/
@@ -214,10 +219,11 @@ Utomhus:
   http://www.maxdesign.com.au/articles/definition/
 
 * Tabbar
+  http://craigsworks.com/projects/qtip2/demos/#ui-tabs
   http://css.maxdesign.com.au/listamatic/horizontal08.htm
   http://www.sethgunderson.com/listnew.html#
 
 
-* Till fšrsta sidan.
+* Till fï¿½rsta sidan.
   http://css-tricks.com/examples/DefinitionList/default.htm
 

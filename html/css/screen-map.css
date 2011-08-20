@@ -128,14 +128,14 @@ body
 
 .googft-info-window .attributes {
   width:50%;
-  height:200px;
-  float:right;
+  height: 200px;
+  float: right;
 }
 
 .googft-info-window .attributes,
 .googft-info-window .attributes dl, .googft-info-window .attributes dt, .googft-info-window .attributes dd {
-  margin: 0px;
-  padding:0px;
+  margin:  0px;
+  padding: 0px;
 }
 
 .googft-info-window .attributes dt {

@@ -31,6 +31,14 @@ picture-search
   -webkit-border-radius: 5px;
 }
 
+#content .picture-search:hover
+{
+  margin: 1px 9px 9px 1px;
+  -webkit-box-shadow: 4px 4px 0 #B4AFA7;
+  -moz-box-shadow: 4px 4px 0 #B4AFA7;
+  box-shadow: 4px 4px 0 #B4AFA7;
+}
+
 #content .picture-search img {
   width: 157px;
   height: 115px;

@@ -222,9 +222,9 @@ INFOBOX
 	margin: 15px 0px 0px 10px;
   padding: 0px;
     
-  border-right: 1px solid #B1D2E4;
-  border-left: 1px solid #B1D2E4;
-  border-bottom: 1px solid #B1D2E4;
+  border-right: 1px solid #E6E3D7;
+  border-left: 1px solid #E6E3D7;
+  border-bottom: 1px solid #E6E3D7;
 }
 
 #content .infobox dt
@@ -236,7 +236,7 @@ INFOBOX
 	margin: 0px;  
 	padding: 5px;
     
-  border-top: 1px solid #B1D2E4;
+  border-top: 1px solid #E6E3D7;
   
   font: 13px helvetica, arial, sans-serif;
   font-weight: bold;
@@ -250,8 +250,8 @@ INFOBOX
 	margin: 0px;  
 	padding: 5px;
   
-  border-left: 1px solid #B1D2E4;
-  border-top: 1px solid #B1D2E4;
+  border-left: 1px solid #E6E3D7;
+  border-top: 1px solid #E6E3D7;
 
   font: 13px helvetica, arial, sans-serif;
   color: #444;

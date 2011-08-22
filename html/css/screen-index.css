@@ -1,0 +1,48 @@
+body {
+    font-family:  Arial;
+}
+
+dl {
+width:300px;
+float:left;
+margin-right:2em;
+}
+
+dt{
+font-weight:bold;
+font-size:0.9em;
+margin-bottom:0.7em;
+}
+
+dd{
+color:#444;
+font-size:0.7em;
+margin:0 0 2em 0;
+padding-left:4.5em;
+line-height:1.5em;
+background:none no-repeat left top;
+}
+
+dd.promotional1{
+background-image:url('../img/paper_small.gif');
+}
+
+dd.promotional2{
+background-image:url('../img/rss_big.gif');
+}
+
+dd.promotional3{
+background-image:url('../img/stats.gif');
+}
+
+dd.promotional4{
+background-image:url('../img/payment.gif');
+}
+
+dd.promotional5{
+background-image:url('../img/communicate.gif');
+}
+
+dd.promotional6{
+background-image:url('../img/privacy.gif');
+}

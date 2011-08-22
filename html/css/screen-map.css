@@ -81,6 +81,22 @@ body
 {
   float: right;
   width: 100px;
+
+  text-decoration: none;
+  padding: 5px 7px;
+  margin-right: 5px;
+  border: 1px solid #778;
+  color: white;
+  border:1px solid gray;
+  background: #3282c2;
+  border-radius: 8px; /*w3c border radius*/
+  box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* w3c box shadow */
+  -moz-border-radius: 8px; /* mozilla border radius */
+  -moz-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* mozilla box shadow */
+  background: -moz-linear-gradient(center top, #a4ccec, #72a6d4 25%, #3282c2 45%, #357cbd 85%, #72a6d4); /* mozilla gradient background */
+  -webkit-border-radius: 8px; /* webkit border radius */
+  -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,.5); /* webkit box shadow */
+  background: -webkit-gradient(linear, center top, center bottom, from(#a4ccec), color-stop(25%, #72a6d4), color-stop(45%, #3282c2), color-stop(85%, #357cbd), to(#72a6d4)); /* webkit gradient background */
 }
 
 #map_search .checkbox_label

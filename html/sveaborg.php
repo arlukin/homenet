@@ -270,6 +270,9 @@
                 <dt>Badkar</dt>
                 <dd>1 st</dd>
 
+                <dt>Duschkarbin</dt>
+                <dd>0 st</dd>
+
                 <dt>Vatten</dt>
                 <dd>Varm och kallvatten</dd>
               </dl>

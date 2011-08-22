@@ -67,6 +67,8 @@ TODO
 * Namn
   www.hyrboende.com
   www.hyr-boende.com
+  www.hyra-boende.com
+  www.hyrabo.com
 
 * To first page
   http://css-tricks.com/examples/DefinitionList/default.htm
@@ -164,6 +166,8 @@ More features
   http://www.maxdesign.com.au/articles/definition/
 
 * Eng�ng per �r skicka mail/ringa alla hus�gare och be dom uppdatera sin annons.
+
+* Hålla penger i depsition ifall något går sönder under hyran.
 
 * En area d�r man kan l�gga in en kommentar om vilka andra sidor som man
   lagt ut sin annons p�.

@@ -11,63 +11,62 @@
 <body>
 
 <dl>
-	<dt>
-		Track your expenses
-	</dt>
-	<dd class="promotional1">
-		Divide bills easily by creating receipts and letting
-		billshare do the math. Automatically keep a searchable history of all bills.
-	</dd>
-	<dt>
-		RSS Feeds
-	</dt>
-	<dd class="promotional2">
-		Keep track of new receipts are posted to your groups
-		instantly by subscribing to the groups RSS feed.
-	</dd>
+  <dt>
+    Hyra bostad
+  </dt>
+  <dd class="promotional1">
+    På hyrabo finner du bostäder att hyra. Både korttidsboende på ett par dagar
+    eller veckor att använda vid semestern, och andrahandskontrakt för att bo
+    i flera månader eller år.
+  </dd>
+  <dt>
+    Hyr ut din bostad
+  </dt>
+  <dd class="promotional2">
+    Har du en eller flera bostäder att hyra ut? Med hjälp av hyrabo får du
+    tillgång till ett heltäckande adminverktyg som hjälper dig att lätt hyra ut
+    din bostad. Du kan hyra ut stugor, fritidshus, sommarhus, villor eller
+    varför inte din lägenhet när du själv är på semester.
+  </dd>
 </dl>
 <dl>
 	<dt>
-		Get Stats
+		Kartsök
 	</dt>
 	<dd class="promotional3">
-		Visualize where your money is going instantly with detailed stats
-		based on receipt category, store or business, and submitter.
+		Med vår kartsöksfunktion får du snabbt en överblick över vilka bostäder
+    som finns tillgängliga i ett område och exact var dom ligger.
 	</dd>
 	<dt>
-		Record Payments
+		Betalningar
 	</dt>
 	<dd class="promotional4">
-		Payments allow you to record any exchanges of money between group members.
+		Betalningen av hyran sköter du enkelt med vår integrerade betalningslösning.
+    Detta är inget tvång men ger både hyrare och uthyrare ett enkelt och säkert
+    medel att genomföra betalningen.
 	</dd>
 </dl>
 <dl>
 	<dt>
-		Communicate
+		Bildsök
 	</dt>
 	<dd class="promotional5">
-		The group wall and in site messenger make it easier than ever to
-		communicate any notes or requests to all your group members.
+		Bildsöksfunktionen hjälper dig att hitta ditt boende utifrån hur bostäderna
+    ser ut. Utan en massa text och andra störande element presenterar vi så många
+    hus bilder som din skärm tillåter, för att du snabbt ska kunna hitta dit
+    drömboende.
 	</dd>
 	<dt>
-		Secure
+		Mäklare
 	</dt>
 	<dd class="promotional6">
-		All your account information and group data is completely secure.
-		All your personal data is encrypted using the latest security methods.
+		Hyrabos web system går även att använda av dig som är företagare och hyr ut
+    flera bostäder. Du kan antingen lägga ut dina bostäder på www.hyrabo.com bland
+    övriga hus, eller på en egen domän där bara dina bostäder finns. Eller båda
+    och.
 	</dd>
 </dl>
-
-    <script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	var pageTracker = _gat._getTracker("UA-68528-29");
-	pageTracker._initData();
-	pageTracker._trackPageview();
-	</script>
-
+  
 </body>
 
 </html> 

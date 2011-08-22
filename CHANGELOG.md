@@ -130,6 +130,8 @@ Programming
 * Use fustiontable/heatmap thing. To display the price level on different areas.
   http://code.google.com/apis/maps/documentation/javascript/examples/layer-fusiontables-styling.html
 
+* Create thumbnails
+  http://www.cyberciti.biz/tips/howto-linux-creating-a-image-thumbnails-from-shell-prompt.html#comment-19317
 More features
 =============
 * Display menu button, have a look at gravatar.

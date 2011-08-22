@@ -56,20 +56,20 @@
     <script>
       window.addEvent('domready', function(){
         var data = {
-          'slides/main.png': { caption: 'Flygfoto på Sveaborg.' },
-          'slides/01 Porch_a.JPG': { caption: 'Äta lunch på verandan.' },
-          'slides/01 Porch_c.JPG': { caption: '' },
-          'slides/01 Porch_d.JPG': { caption: '' },
-          'slides/01 Porch_f.JPG': { caption: '' },
-          'slides/02 Dining_room_a.JPG': { caption: '' },
-          'slides/02 Dining_room_c.JPG': { caption: '' },
-          'slides/02 Dining_room_d.JPG': { caption: '' },
-          'slides/02ThePorch.JPG': { caption: '' },
-          'slides/03FromThePorch.JPG': { caption: '' },
-          'slides/09Back.JPG': { caption: '' },
-          'slides/11Side.JPG': { caption: '' },
-          'slides/15ThePorch.JPG': { caption: '' },
-          'slides/17Front.JPG': { caption: '' }
+          'slides/00-main.png': { caption: 'Flygfoto på Sveaborg.' },
+          'slides/01-porch.jpg': { caption: 'Äta lunch på verandan.' },
+          'slides/02-porch.jpg': { caption: '' },
+          'slides/03-porch.jpg': { caption: '' },
+          'slides/04-porch.jpg': { caption: '' },
+          'slides/05-porch.jpg': { caption: '' },
+          'slides/06-porch.jpg': { caption: '' },
+          'slides/07-dining-room.jpg': { caption: '' },
+          'slides/08-dining-room.jpg': { caption: '' },
+          'slides/09-dining-room.jpg': { caption: '' },
+          'slides/10-side.jpg': { caption: '' },
+          'slides/11-front.jpg': { caption: '' },
+          'slides/12-back.jpg': { caption: '' },
+          'slides/13-from-the-porch.jpg': { caption: '' }
         };
 
         var thumbs = [/(.*)slides(.*)$/, '$1thumbs$2'];

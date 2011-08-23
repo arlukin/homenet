@@ -1,48 +1,134 @@
-body {
-    font-family:  Arial;
+#content .inner,
+#content {
+  width: 950px;
 }
 
-dl {
-width:300px;
-float:left;
-margin-right:2em;
+#content .inner
+{
+  padding-top: 20px;
+}
+
+/**
+
+Slider
+
+**/
+
+.theme-default #slider
+{
+    margin-bottom: 30px;
+    width: 212px;
+    height: 324px;
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper
+{
+    margin-top:150px;
+}
+
+.slider-wrapper
+{
+  float: left;
+  width: 212px;
+}
+
+/**
+
+Ingress
+
+**/
+
+#ingress-text
+{
+  float: left;
+  width: 600px;  
+  margin-left: 60px;
+  margin-top: 110px;
+  vertical-align: middle;
+}
+
+#ingress-text h1
+{
+  font-family: "Lucida Grande", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 30px;
+  color: black;
+  line-height: 44px;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: -.05em;
+}
+
+#ingress-text h3
+{
+  font-family: "Lucida Grande", "Lucida Sans", Tahoma, sans-serif;
+  color: #626266;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: -.05em;
+}
+
+.clear
+{
+  clear: both;
+}
+/**
+
+Service description
+
+**/
+
+dl {  
+  width: 29%;
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 dt{
-font-weight:bold;
-font-size:0.9em;
-margin-bottom:0.7em;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 0.7em;
 }
 
 dd{
-color:#444;
-font-size:0.7em;
-margin:0 0 2em 0;
-padding-left:4.5em;
-line-height:1.5em;
-background:none no-repeat left top;
+  font-size: 0.7em;
+  line-height: 1.5em;
+  
+  margin: 0 0 0 0;
+  height: 120px;
 }
 
-dd.promotional1{
-background-image:url('../img/paper_small.gif');
+.sprite
+{
+  background: url('/images/icons/big_preview_webtoys.png') no-repeat top left;
+  width: 64px;
+  height: 64px;
+  float: left;
 }
 
-dd.promotional2{
-background-image:url('../img/rss_big.gif');
+.promotional1
+{
+  background-position: -791px -14px;
 }
 
-dd.promotional3{
-background-image:url('../img/stats.gif');
+.promotional2{
+  background-position: -210px -88px;
 }
 
-dd.promotional4{
-background-image:url('../img/payment.gif');
+.promotional3{
+  background-position: -16px -256px;
 }
 
-dd.promotional5{
-background-image:url('../img/communicate.gif');
+.promotional4{
+  background-position: -336px -20px;
 }
 
-dd.promotional6{
-background-image:url('../img/privacy.gif');
+.promotional5{
+  background-position: -727px -14px;
+}
+
+.promotional6{
+  background-position: -16px -95px;
 }

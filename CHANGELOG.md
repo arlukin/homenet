@@ -70,15 +70,21 @@ TODO
   www.hyra-boende.com
   www.hyrabo.com
 
-* To first page
-  http://css-tricks.com/examples/DefinitionList/default.htm
-  https://github.com/
+# To first page
+  http://css-tricks.com/examples/DefinitionList/default.htm  
 
-* Splash screen-slider on index.php
+# Splash screen-slider on index.php
   http://www.serie3.info/s3slider/
   http://www.serie3.info/s3slider/demonstration.html
   http://nivo.dev7studios.com/demos/
   http://workshop.rs/projects/coin-slider/
+
+* Is the design a candidate?
+  http://nivo.dev7studios.com/
+    
+* First page design suggestions.
+  https://github.com/
+  http://nivo.dev7studios.com/demos/
 
 * Add calender page to http://localhost:8888/sveaborg.html.
 
@@ -104,6 +110,11 @@ TODO
 * Icons
   http://www.1stwebdesigner.com/freebies/e-commerce-icons/
   http://www.freeiconsdownload.com/Free_Downloads.asp?id=562
+  http://clipart-for-free.blogspot.com/search/label/Animal%20Clipart
+
+
+* Using, not free for commercial
+  http://www.freeiconsdownload.com/Free_Downloads.asp?id=1422
 
 Add Admin interface
 ===================
@@ -134,6 +145,9 @@ Programming
 
 * Create thumbnails
   http://www.cyberciti.biz/tips/howto-linux-creating-a-image-thumbnails-from-shell-prompt.html#comment-19317
+
+* Test performance
+  http://www.webpagetest.org/result/110822_ND_1CRE4/
 More features
 =============
 * Display menu button, have a look at gravatar.
@@ -164,6 +178,7 @@ More features
 * Good reading
   http://coding.smashingmagazine.com/2009/04/08/from-table-hell-to-div-hell/
   http://www.maxdesign.com.au/articles/definition/
+  http://css-tricks.com/158-css-sprites/
 
 * Eng�ng per �r skicka mail/ringa alla hus�gare och be dom uppdatera sin annons.
 

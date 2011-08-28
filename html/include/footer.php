@@ -27,6 +27,8 @@
             <li><a href="map.php">Kartsök</a></li>            
             <li><a href="rental-accommodation.php">Hyra bostad</a></li>
             <li><a href="rentals.php">Uthyrare</a></li>
+            <li><a href="company.php">Mäklare</a></li>
+            <li><a href="payments.php">Betalningar</a></li>
           </ul>
         </div>
 

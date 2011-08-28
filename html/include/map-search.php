@@ -22,8 +22,8 @@
 
               <br/>
  
-              <input type="button" value="Bildsök" onclick="search();"></input><br/>
-              <input type="button" value="Kartsök" onclick="search();"></input>
+              <input type="button" class="button" value="Bildsök" onclick="search();"></input><br/>
+              <input type="button" class="button" value="Kartsök" onclick="search();"></input>
             </td>
           </tr>
 

@@ -10,6 +10,14 @@ body {
   margin: auto;  
 }
 
+a,
+a:visited,
+a:hover,
+a:active
+{
+  text-decoration:none;
+}
+
 /**
 
 GENERAL
@@ -131,7 +139,7 @@ STICKY FOOTER
 
   z-index: 10000;
   width: auto; /*set width of bar to width of entire window*/
-  height: 150px;
+  height: 200px;
 }
 
 #sticky-footer #shadow {
@@ -215,8 +223,7 @@ STICKY FOOTER
 
   text-decoration: none;
 
-  font-size: 13px;
-  color: #FF9C00;
+  font-size: 13px;  
   color: #97A5AF;
 
 }
@@ -461,3 +468,41 @@ GALLERY
 }
 
 
+/**
+
+BUTTON
+
+**/
+
+.button
+{
+  -moz-box-shadow: inset 0px 1px 0px 0px #3694ff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #3694ff;
+  box-shadow: inset 0px 1px 0px 0px #3694ff;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2971D5), color-stop(1, #1A52A1) );
+  background: -moz-linear-gradient( center top, #2971D5 5%, #1A52A1 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2971d5', endColorstr='#1a52a1');
+  background-color: #2971D5;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #1A52A1;
+  display: inline-block;
+  color: white !important;
+  font-weight: bold;
+  padding: 4px 10px !important;
+  height: auto !important;
+  text-decoration: none;
+  text-shadow: 0px -1px 1px #17224D;
+}
+
+.button a, .button a:visited
+{
+    color: #1e54a2;
+    border-bottom:1px dotted #1e54a2;
+}
+
+.button a:hover, .button a:active
+{
+    color: #000;
+}

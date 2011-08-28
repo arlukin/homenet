@@ -12,6 +12,7 @@
     <!-- CSS - Begin -->
     <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />    
     <link rel="stylesheet" type="text/css" href="/css/screen-index.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen-map-search.css" media="screen" />
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->
@@ -42,7 +43,8 @@
 
   <body>
     <div id="wrap">
-
+      <?php include("include/map-search.phsp"); ?>
+      
       <?php include("include/header.php"); ?>
 
       <div id="content">
@@ -52,15 +54,23 @@
             <div class="ribbon"></div>
             <div id="slider" class="nivoSlider">
               <a href="sveaborg.php">
-                <img src='/images/nivo-slider/00-main.png' title="Description for 22img01">
+                <img src='/images/nivo-slider/tjoloholm.jpg' title="Tjolöholm">
               </a>
 
               <a href="sveaborg.php">
-                <img src='/images/nivo-slider/01-porch.jpg' title="Description for 22img01">
+                <img src='/images/nivo-slider/tjoloholm-kyrka.jpg' title="Kyrkan">
               </a>
 
               <a href="sveaborg.php">
-                <img src='/images/nivo-slider/03-porch.jpg'  title="Description for 22img01">
+                <img src='/images/nivo-slider/grindstugan.jpg'  title="Grindstugan">
+              </a>
+
+              <a href="sveaborg.php">
+                <img src='/images/nivo-slider/baksidan.jpg'  title="Baksidan">
+              </a>
+
+              <a href="sveaborg.php">
+                <img src='/images/nivo-slider/sveaborg.jpg'  title="Sveaborg">
               </a>
             </div>
           </div>
@@ -74,28 +84,32 @@
             <h1>Hitta ditt semesterboende</h1>
             <h3>Med våra sökfunktioner hittar du stugor, fritidshus, villor och lägenheter att hyra under korta och långa perioder.</h3>
           </div>
-          <div class="clear"></div>
 
+          <div class="clear"></div>
 
           <dl>
             <dt>
               Hyra bostad
             </dt>
             <dd>
-              <div class="sprite promotional1"></div>
-              På hyrabo finner du bostäder att hyra. Både korttidsboende på ett par dagar
-              eller veckor att använda vid semestern, och andrahands-kontrakt för att bo
-              i flera månader eller år.
+              <a href="/rental-accommodation.php">
+                <div class="sprite promotional1"></div>
+                Hos oss hittar du bostäder att hyra. Både korttidsboende på ett par dagar
+                eller veckor att använda vid semestern, och andrahands-kontrakt för att bo
+                i flera månader eller år.
+              </a>
             </dd>
             <dt>
               Hyr ut din bostad
             </dt>
             <dd>
-              <div class="sprite promotional2"></div>
-              Har du en eller flera bostäder att hyra ut? Med hjälp av hyrabo får du
-              tillgång till ett heltäckande adminverktyg som hjälper dig att lätt hyra ut
-              din bostad. Du kan hyra ut stugor, fritidshus, sommarhus, villor eller
-              varför inte din lägenhet när du själv är på semester.
+              <a href="/rentals.php">
+                <div class="sprite promotional2"></div>
+                Har du en eller flera bostäder att hyra ut? Med hjälp av hyrabo får du
+                tillgång till ett heltäckande adminverktyg som hjälper dig att lätt hyra ut
+                din bostad. Du kan hyra ut stugor, fritidshus, sommarhus, villor eller
+                varför inte din lägenhet när du själv är på semester.
+              </a>
             </dd>
           </dl>
           <dl>
@@ -103,18 +117,22 @@
               Kartsök
             </dt>
             <dd>
-              <div class="sprite promotional3"></div>
-              Med vår kartsöksfunktion får du snabbt en överblick över vilka bostäder
-              som finns tillgängliga i ett område och exact var dom ligger.
+              <a href="/map.php">
+                <div class="sprite promotional3"></div>
+                Med vår kartsöksfunktion får du snabbt en överblick över vilka bostäder
+                som finns tillgängliga i ett område och exact var dom ligger.
+              </a>
             </dd>
             <dt>
               Betalningar
             </dt>
             <dd>
-              <div class="sprite promotional4"></div>
-              Betalningen av hyran sköter du enkelt med vår integrerade betalningslösning.
-              Detta är inget tvång men ger både hyrare och uthyrare ett enkelt och säkert
-              medel att genomföra betalningen.
+              <a href="/payments.php">
+                <div class="sprite promotional4"></div>
+                Betalningen av hyran sköter du enkelt med vår integrerade betalningslösning.
+                Detta är inget tvång men ger både hyrare och uthyrare ett enkelt och säkert
+                medel att genomföra betalningen.
+              </a>
             </dd>
           </dl>
           <dl>
@@ -122,21 +140,25 @@
               Bildsök
             </dt>
             <dd>
-              <div class="sprite promotional5"></div>
-              Bildsöksfunktionen hjälper dig att hitta ditt boende utifrån hur bostäderna
-              ser ut. Utan en massa text och andra störande element presenterar vi så många
-              hus bilder som din skärm tillåter, för att du snabbt ska kunna hitta dit
-              drömboende.
+              <a href="/pictures.php">
+                <div class="sprite promotional5"></div>
+                Bildsöksfunktionen hjälper dig att hitta ditt boende utifrån hur bostäderna
+                ser ut. Utan en massa text och andra störande element presenterar vi så många
+                hus bilder som din skärm tillåter, för att du snabbt ska kunna hitta dit
+                drömboende.
+              </a>
             </dd>
             <dt>
               Mäklare
             </dt>
             <dd>
-              <div class="sprite promotional6"></div>
-              Hyrabos web system går även att använda av dig som är företagare och hyr ut
-              flera bostäder. Du kan antingen lägga ut dina bostäder på www.hyrabo.com bland
-              övriga hus, eller på en egen domän där bara dina bostäder finns. Eller båda
-              och.
+              <a href="/company.php">
+                <div class="sprite promotional6"></div>
+                Hyrabos web system går även att använda av dig som är företagare och hyr ut
+                flera bostäder. Du kan antingen lägga ut dina bostäder på www.hyrabo.com bland
+                övriga hus, eller på en egen domän där bara dina bostäder finns. Eller båda
+                och.
+              </a>
             </dd>
           </dl>
       </div>

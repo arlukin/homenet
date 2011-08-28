@@ -1,5 +1,6 @@
 #content .inner,
-#content {
+#content
+{
   width: 950px;
 }
 
@@ -20,6 +21,7 @@ Slider
     width: 212px;
     height: 324px;
 }
+
 .theme-pascal.slider-wrapper,
 .theme-orman.slider-wrapper
 {
@@ -131,4 +133,21 @@ dd{
 
 .promotional6{
   background-position: -16px -95px;
+}
+
+dl dd a
+{
+  display: inline-block;
+}
+
+dl dd a,
+dl dd a:visited
+{
+  color: black;  
+}
+
+dl dd a:hover,
+dl dd a:active
+{
+  opacity: 0.70;
 }

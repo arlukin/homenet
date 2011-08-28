@@ -94,9 +94,10 @@
             <dd>
               <a href="/rental-accommodation.php">
                 <div class="sprite promotional1"></div>
-                Hos oss hittar du bostäder att hyra. Både korttidsboende på ett par dagar
-                eller veckor att använda vid semestern, och andrahands-kontrakt för att bo
-                i flera månader eller år.
+                Hos oss hittar du bostäder att hyra. Främst finns det korttidsboende
+                på ett par dagar eller upp till ett par veckor där du kan
+                tillbringa din semester. Men vi har också andrahands-kontrakt
+                för dig som letar efter någonstans att bo under en längre tid.
               </a>
             </dd>
             <dt>
@@ -105,10 +106,11 @@
             <dd>
               <a href="/rentals.php">
                 <div class="sprite promotional2"></div>
-                Har du en eller flera bostäder att hyra ut? Med hjälp av hyrabo får du
-                tillgång till ett heltäckande adminverktyg som hjälper dig att lätt hyra ut
-                din bostad. Du kan hyra ut stugor, fritidshus, sommarhus, villor eller
-                varför inte din lägenhet när du själv är på semester.
+                Har du en eller flera bostäder som du inte använder och vill hyra
+                ut? Då har du genom vår webplats tillgång till flera funktioner
+                som hjälper dig med din uthyrning. Hos oss kan du hyra ut stugor,
+                fritidshus, sommarhus, villor eller varför inte din lägenhet när
+                du själv är på semester.
               </a>
             </dd>
           </dl>
@@ -120,7 +122,8 @@
               <a href="/map.php">
                 <div class="sprite promotional3"></div>
                 Med vår kartsöksfunktion får du snabbt en överblick över vilka bostäder
-                som finns tillgängliga i ett område och exact var dom ligger.
+                som finns tillgängliga i ett område. Avancerade filter hjälper
+                dig att bara visa de bostäder som du finner intressanta.
               </a>
             </dd>
             <dt>
@@ -131,7 +134,7 @@
                 <div class="sprite promotional4"></div>
                 Betalningen av hyran sköter du enkelt med vår integrerade betalningslösning.
                 Detta är inget tvång men ger både hyrare och uthyrare ett enkelt och säkert
-                medel att genomföra betalningen.
+                medel för att genomföra betalningen.
               </a>
             </dd>
           </dl>
@@ -144,7 +147,7 @@
                 <div class="sprite promotional5"></div>
                 Bildsöksfunktionen hjälper dig att hitta ditt boende utifrån hur bostäderna
                 ser ut. Utan en massa text och andra störande element presenterar vi så många
-                hus bilder som din skärm tillåter, för att du snabbt ska kunna hitta dit
+                bostadsbilder som din skärm tillåter, så att du snabbt ska kunna hitta dit
                 drömboende.
               </a>
             </dd>
@@ -154,10 +157,11 @@
             <dd>
               <a href="/company.php">
                 <div class="sprite promotional6"></div>
-                Hyrabos web system går även att använda av dig som är företagare och hyr ut
-                flera bostäder. Du kan antingen lägga ut dina bostäder på www.hyrabo.com bland
-                övriga hus, eller på en egen domän där bara dina bostäder finns. Eller båda
-                och.
+                Vårt websystem kan även användas av dig som är företagare/mäklare 
+                och hyr ut flera bostäder. Du kan med våra verktyg lägga ut dina
+                bostäder på din egna domän, och slipper dyra investeringar i ett
+                eget websystem. Du kan givetvis också lägga ut din bostäder på
+                www.hyr-boende.com.
               </a>
             </dd>
           </dl>

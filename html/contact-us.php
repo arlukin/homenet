@@ -36,60 +36,60 @@
 
       <?php include("include/header.php"); ?>
 
-      <div id="leftcolumn">
-        <div class="inner border flag">
-          <ul>
-            <li><a href=""><img src="http://sveaborg.cybercow.se/components/com_joomfish/images/flags/sv.gif"/></a></li>
-            <li><a href=""><img src="http://sveaborg.cybercow.se/components/com_joomfish/images/flags/en.gif"/></a></li>
-            <li><a href=""><img src="http://sveaborg.cybercow.se/components/com_joomfish/images/flags/de.gif"/></a></li>
-          </ul>
-        </div>
+      <div id="main-area" class="border">
+        <div id="primary" class="support">
+          <div class="clearfix">
 
-        <div class="inner border">
-          <ul>
-            <li><a href="/about-us.php">Om oss</a></li>
-            <li><a href="/contact-us.php">Kontakta oss</a></li>
-            <li><a href="/blog.php">Blog</a></li>
-            <li><a href="http://www.facebook.com/arlukin">Facebook</a></li>
-          </ul>
-        </div>
-      </div>
+            <div id="leftcolumn">
+              <div class="inner">
+                <ul>
+                  <li><a href="/about-us.php">Om oss</a></li>
+                  <li><a href="/contact-us.php">Kontakta oss</a></li>
+                  <li><a href="/blog.php">Blog</a></li>
+                  <li><a href="http://www.facebook.com/arlukin">Facebook</a></li>
+                </ul>
+              </div>
+            </div>
 
-      <div id="content">
-        <div class="inner border">
-          <h1><a name="about-us">Kontakta oss</a></h1>
+            <div id="content">             
+                <div id="gallery" class="slideshow">
+                  <img src="images/about-us.jpg" alt="Om oss" Title="Om oss">
+                </div>
 
-          <div id="gallery" class="slideshow">
-            <img src="images/about-us.jpg" alt="Om oss" Title="Om oss">
+                <h1><a name="about-us">Kontakta oss</a></h1>
+
+                <p>
+                  Har du frågor angående någon av de semesterbostäder som presenteras
+                  via vår webtjänst. Kontakta då i förstahand semesterbostadens ägare.
+                  I andra hand skicka ett epost till vår kundtjänst,
+                  <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a>, så svarar vi snarast.
+                </p>
+
+                <p>
+                  Har du själv en eller flera bostäder du vill hyra ut, eller
+                  driver du ett eget företag som hyr ut semesterbostäder och vill
+                  använda dig av vårt web-verktyg, kontakta oss för mer information.
+                </p>
+
+                <p>
+
+                Kontaktperson: Daniel Lindh<br>
+                Telefon: 073-626 54 49<br>
+                (måndag - fredag 11:00 - 17:00)<br>
+                Epost: <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a><br>
+                <br/>
+                Amivono AB<br>
+                Org-nr: 556751-8245<br>                
+                </p>
+              
+            </div>            
+            
           </div>
-
-          <p>
-            Har du frågor angående någon av de semesterbostäder som presenteras
-            via vår webtjänst. Kontakta då i förstahand semesterbostadens ägare.
-            I andra hand skicka ett epost till vår kundtjänst,
-            <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a>, så svarar vi snarast.
-          </p>
-
-          <p>
-            Har du själv en eller flera bostäder du vill hyra ut, eller
-            driver du ett eget företag som hyr ut semesterbostäder och vill
-            använda dig av vårt web-verktyg, kontakta oss för mer information.
-          </p>
-
-          <p>
-          
-          Kontaktperson: Daniel Lindh<br>
-          Telefon: 073-626 54 49 (måndag - fredag 11:00 - 17:00)<br>
-          Epost: <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a><br>
-          <br/>
-          Amivono AB<br>
-          Org-nr: 55xxx<br>
-          VAT-nr: XXX
-          </p>
-        </div>
+        </div>        
       </div>
-
       <?php include("include/footer.php"); ?>
+      
+      <?php include("include/sticky-footer.php"); ?>
       
     </div>    
   </body>

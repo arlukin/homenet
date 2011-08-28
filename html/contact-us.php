@@ -47,13 +47,12 @@
 
         <div class="inner border">
           <ul>
-            <li><a href="about-us.php">Om oss</a></li>
-            <li><a href="contact-us.php">Kontakta oss</a></li>
-            <li><a href="blog.php">Blog</a></li>
+            <li><a href="/about-us.php">Om oss</a></li>
+            <li><a href="/contact-us.php">Kontakta oss</a></li>
+            <li><a href="/blog.php">Blog</a></li>
             <li><a href="http://www.facebook.com/arlukin">Facebook</a></li>
           </ul>
         </div>
-
       </div>
 
       <div id="content">
@@ -66,9 +65,9 @@
 
           <p>
             Har du frågor angående någon av de semesterbostäder som presenteras
-            via våra webtjänst. Kontakta då i förstahand semesterbostadens ägare.
+            via vår webtjänst. Kontakta då i förstahand semesterbostadens ägare.
             I andra hand skicka ett epost till vår kundtjänst,
-            <a href="mailto:info@homenet.se">info@homenet.se</a>, så svarar vi snarast.
+            <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a>, så svarar vi snarast.
           </p>
 
           <p>
@@ -78,11 +77,12 @@
           </p>
 
           <p>
-          Amivono AB<br>
-          Styrbjörnsvägen 29<br>
-          126 51 HÄGERSTEN<br>
+          
+          Kontaktperson: Daniel Lindh<br>
           Telefon: 073-626 54 49 (måndag - fredag 11:00 - 17:00)<br>
-          Epost: <a href="mailto:info@homenet.se">info@homenet.se</a><br>
+          Epost: <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a><br>
+          <br/>
+          Amivono AB<br>
           Org-nr: 55xxx<br>
           VAT-nr: XXX
           </p>

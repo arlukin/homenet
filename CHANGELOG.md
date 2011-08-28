@@ -65,6 +65,7 @@ TODO
 ====
 
 * Namn
+  http://www.dafont.com/star-avenue.font?text=www.hyr-boende.com&psize=s
   www.hyrboende.com
   www.hyr-boende.com
   www.hyra-boende.com
@@ -80,11 +81,10 @@ TODO
   http://workshop.rs/projects/coin-slider/
 
 * Is the design a candidate?
-  http://nivo.dev7studios.com/
-    
-* First page design suggestions.
-  https://github.com/
-  http://nivo.dev7studios.com/demos/
+  http://nivo.dev7studios.com/support/
+  http://stackexchange.com/
+  http://www.facebook.com/?sk=lf
+  https://github.com/  
 
 * Add calender page to http://localhost:8888/sveaborg.html.
 

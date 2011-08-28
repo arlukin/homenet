@@ -10,21 +10,12 @@
     <meta http-equiv="imagetoolbar" content="no"/>
 
     <!-- CSS - Begin -->
-    <link rel="stylesheet" type="text/css" href="/css/screen-accommodation.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />    
     <!-- CSS - End -->
 
-    <!-- Google loader - Begin -->
-    <script src="https://www.google.com/jsapi?key=ABQIAAAAF5bIhltbkNqCPFnOWGpVORS6UKxT1WJ8urQdsBWaKBNv0q7aUxTX6tthNtdX3PXsobBzz5nUKI1WEw" type="text/javascript"></script>
-    <script language="Javascript" type="text/javascript">
-    //<![CDATA[
-
-    google.load("jquery", "1.6.2");
-    google.load("mootools", "1.3.2");
-
-    //]]>
-    </script>
-    <!-- Google loader - End -->
+    <!-- JQuery - Begin -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- JQuery - End -->
 
     <!-- Expandable Sticky Bar - Begin-->
     <script src="js/expstickybar.js">
@@ -41,11 +32,9 @@
   </head>
 
   <body>
-    <div id="header"></div>
-
     <div id="wrap">
 
-      <div id="headerimg"></div>
+      <?php include("include/header.php"); ?>
 
       <div id="leftcolumn">
         <div class="inner border flag">
@@ -98,14 +87,10 @@
           VAT-nr: XXX
           </p>
         </div>
-
-        <div class="">
-          <em>Senast uppdaterad 17 Augusti 2011 16:51</em>
-        </div>
       </div>
-    </div>
 
-    <?php include("include/footer.php"); ?>
-
+      <?php include("include/footer.php"); ?>
+      
+    </div>    
   </body>
 </html>

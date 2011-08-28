@@ -12,9 +12,8 @@
     <!-- CSS - Begin -->
     <link rel="stylesheet" type="text/css" href="/js/qtip/jquery.qtip.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/screen-accommodation.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/screen-picture-search.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" media="screen" />    
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen-picture-search.css" media="screen" />    
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->
@@ -37,7 +36,7 @@
   </head>
 
   <body>
-    <div id="wrap">
+    <div id="wrap">      
 
       <?php include("include/map-search.php"); ?>
 
@@ -49,10 +48,11 @@
           </a>
           <?php } ?>
         </div>
-      </div>
-    </div>
+      </div>      
 
-    <?php include("include/footer.php"); ?>
+      <?php include("include/footer.php"); ?>
+      
+    </div>    
 
     <!-- JQuery - Begin -->    
     <script type="text/javascript">

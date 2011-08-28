@@ -10,8 +10,7 @@
     <meta http-equiv="imagetoolbar" content="no"/>
 
     <!-- CSS - Begin -->
-    <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />    
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->

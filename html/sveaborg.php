@@ -10,21 +10,17 @@
     <meta http-equiv="imagetoolbar" content="no"/>
 
     <!-- CSS - Begin -->
-    <link rel="stylesheet" type="text/css" href="/css/screen-accommodation.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />    
     <!-- CSS - End -->
 
-    <!-- Google loader - Begin -->
-    <script src="https://www.google.com/jsapi?key=ABQIAAAAF5bIhltbkNqCPFnOWGpVORS6UKxT1WJ8urQdsBWaKBNv0q7aUxTX6tthNtdX3PXsobBzz5nUKI1WEw" type="text/javascript"></script>
-    <script language="Javascript" type="text/javascript">
-    //<![CDATA[
+    <!-- JQuery - Begin -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- JQuery - End -->
 
-    google.load("jquery", "1.6.2");
-    google.load("mootools", "1.3.2");
 
-    //]]>
-    </script>    
-    <!-- Google loader - End -->
+    <!-- MooTools - Begin -->
+    <script type="text/javascript" src="/js/mootools-yui-compressed.js"></script>
+    <!-- MooTools - End -->
 
     <!-- Google maps - Begin-->
     <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;oe=utf-8&amp;hl=sv&amp;key=ABQIAAAAD5NZ_lXDdrJie4CyofYoxRTjYDviBkMsvJzXD-K0C_dIeve9FxSQGKU27PQZIeJC5g5rPDElOozq6w" type="text/javascript"></script>
@@ -83,12 +79,11 @@
 
   </head>
 
-  <body>
-    <div id="header"></div>
+  <body>    
 
     <div id="wrap">
 
-      <div id="headerimg"></div>
+      <?php include("include/header.php"); ?>
 
       <div id="leftcolumn">
         <div class="inner border flag">
@@ -776,16 +771,11 @@
             <li>Det går inte att öppna alla fönster, men du kommer själv att se vilka.</li>
           </ul>
 
-
-        </div>
-
-        <div class="">
-          <em>Senast uppdaterad Fredag, 20 Mars 2009 23:51</em>
         </div>
       </div>
-    </div>
 
-    <?php include("include/footer.php"); ?>
+      <?php include("include/footer.php"); ?>
+    </div>    
 
   </body>
 </html>

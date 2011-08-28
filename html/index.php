@@ -10,8 +10,7 @@
     <meta http-equiv="imagetoolbar" content="no"/>
 
     <!-- CSS - Begin -->
-    <link rel="stylesheet" type="text/css" href="/css/screen-accommodation.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />    
     <link rel="stylesheet" type="text/css" href="/css/screen-index.css" media="screen" />
     <!-- CSS - End -->
 
@@ -19,10 +18,6 @@
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/qtip/jquery.qtip.min.js"></script>
     <!-- JQuery - End -->
-
-    <!-- Coin-slider - Begin -->
-    <script type="text/javascript" src="/js/coin-slider/coin-slider.min.js"></script>    
-    <!-- Coin-slider - End -->
 
     <!-- Nivoslider - Begin -->
     <link rel="stylesheet" href="/js/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
@@ -47,6 +42,9 @@
 
   <body>
     <div id="wrap">
+
+      <?php include("include/header.php"); ?>
+
       <div id="content">
         <div class="inner border">          
 
@@ -54,15 +52,15 @@
             <div class="ribbon"></div>
             <div id="slider" class="nivoSlider">
               <a href="sveaborg.php">
-                <img src='/images/coin-slider/00-main.png' title="Description for 22img01">
+                <img src='/images/nivo-slider/00-main.png' title="Description for 22img01">
               </a>
 
               <a href="sveaborg.php">
-                <img src='/images/coin-slider/01-porch.jpg' title="Description for 22img01">
+                <img src='/images/nivo-slider/01-porch.jpg' title="Description for 22img01">
               </a>
 
               <a href="sveaborg.php">
-                <img src='/images/coin-slider/03-porch.jpg'  title="Description for 22img01">
+                <img src='/images/nivo-slider/03-porch.jpg'  title="Description for 22img01">
               </a>
             </div>
           </div>

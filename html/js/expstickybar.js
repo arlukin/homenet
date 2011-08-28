@@ -99,7 +99,7 @@ var mystickybar=new expstickybar({
 })
 
 var mystickyfooter=new expstickybar({
-  id: "footer", //id of sticky bar DIV
+  id: "sticky-footer", //id of sticky bar DIV
   position:'bottom', //'top' or 'bottom'
   revealtype:'mouseover', //'mouseover' or 'manual'
   peekamount: 45, //number of pixels to reveal when sticky bar is closed

@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/js/qtip/jquery.qtip.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/screen-picture-search.css" media="screen" />    
+    <link rel="stylesheet" type="text/css" href="/css/screen-picture-search.css" media="screen" />
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->
@@ -36,25 +36,22 @@
   </head>
 
   <body>
-    <div id="wrap">      
 
-      <?php include("include/map-search.php"); ?>
+    <?php include("include/map-search.php"); ?>
 
+    <div id="wrap">
       <div id="content">
-        <div class="inner border">
-          <?php for ($i=1; $i < 100; $i++) { ?>
-          <a class="picture-search" href="sveaborg.php" title="Det här är ett nedrans fint hus">
-            <img id="ts1" src="/images/picture-search/<?= $i % 24 ?>.jpg" alt="Sveaborg">
-          </a>
-          <?php } ?>
-        </div>
-      </div>      
+        <?php for ($i=1; $i < 100; $i++) { ?>
+        <a class="picture-search" href="sveaborg.php" title="Det här är ett nedrans fint hus">
+          <img id="ts1" src="/images/picture-search/<?= $i % 24 ?>.jpg" alt="Sveaborg">
+        </a>
+        <?php } ?>
+      </div>
+    </div>
 
-      <?php include("include/footer.php"); ?>
-      
-    </div>    
+    <?php include("include/footer.php"); ?>
 
-    <!-- JQuery - Begin -->    
+    <!-- JQuery - Begin -->
     <script type="text/javascript">
     $(document).ready(function()
     {
@@ -62,7 +59,7 @@
       $('a[title]').qtip({
         position: {
           my: 'right center',
-          at: 'center left', 
+          at: 'center left',
           viewport: $(window)
         },
       });
@@ -70,7 +67,7 @@
       // Tooltip over all pictures.
       var shared = {
         content: {
-          text: 'Loading...', 
+          text: 'Loading...',
           ajax: {
             url: '/pictures-qtip.php',
             type: 'GET',
@@ -79,8 +76,8 @@
           }
         },
         position: {
-          my: 'top center',  
-          at: 'bottom center', 
+          my: 'top center',
+          at: 'bottom center',
           viewport: $(window)
         },
         show: {
@@ -92,7 +89,7 @@
         },
         style: {
           classes: 'ui-tooltip-green ui-tooltip-shadow ui-tooltip-rounded',
-          
+
         }
       };
 

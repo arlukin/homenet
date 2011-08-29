@@ -38,30 +38,26 @@
     <div id="wrap">
 
       <div id="leftcolumn">
-        <div class="inner border">
-          <ul>
-            <li><a href="company.php">Mäklare</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="company.php">Mäklare</a></li>
+        </ul>
       </div>
 
       <div id="content">
-        <div class="inner border">          
-          <div id="gallery">
-            <img src="images/about-us.jpg" alt="Om oss" Title="Om oss">
-          </div>
-
-          <h1><a name="about-us">Mäklare</a></h1>
-
-          <p>
-            Med 10 års erfarenhet inom resebranchen genom dotterbolagen
-            Fareoffice Car Rental Solutions och Farepayment AB. Tillhandahåller
-            vi på Amivono AB (55xxxxx) en tjänst för semesterbostads förmedling.
-          </p>
+        <div id="gallery">
+          <img src="images/about-us.jpg" alt="Om oss" Title="Om oss">
         </div>
-      </div>
 
-      <?php include("include/footer.php"); ?>
-    </div>    
+        <h1><a name="about-us">Mäklare</a></h1>
+
+        <p>
+          Med 10 års erfarenhet inom resebranchen genom dotterbolagen
+          Fareoffice Car Rental Solutions och Farepayment AB. Tillhandahåller
+          vi på Amivono AB (55xxxxx) en tjänst för semesterbostads förmedling.
+        </p>
+      </div>      
+    </div>
+
+    <?php include("include/footer.php"); ?>
   </body>
 </html>

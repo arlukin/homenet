@@ -10,7 +10,9 @@
     <meta http-equiv="imagetoolbar" content="no"/>
 
     <!-- CSS - Begin -->
-    <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />    
+    <link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/screen-map.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/screen-map-search.css" media="screen" />
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->
@@ -141,19 +143,18 @@
 
 <body onload="initialize()">
 
-<div id="wrap">
+  <?php include("include/header.php"); ?>
+  
+  <div id="wrap">
 
-  <?php include("include/map-search.php"); ?>
+    <?php include("include/map-search.php"); ?>
 
-  <!-- Content - Begin -->
-  <div style="height: 100%; width:100%; min-width: 1258px;">
-    <div id="map_canvas" style="width: 100%;height:100%;min-width: 1258px;"></div>
+    <!-- Content - Begin -->
+    <div style="height: 100%; width:100%; min-width: 1258px;">
+      <div id="map_canvas" style="width: 100%;height:100%;min-width: 1258px;"></div>
+    </div>
+    <!-- Content - End -->
   </div>
-  <!-- Content - End -->
-
   <?php include("include/footer.php"); ?>
-
-</div><!--/ #wrap -->
-
 </body>
 </html>

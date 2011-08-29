@@ -11,12 +11,27 @@ body
 }
 
 #wrap
-{
-  height:100%;
+{  
   width: 100%;
-  position:absolute;
+  position: absolute;
   left:0;
-  top:0;
+  top: 46px;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: 0 0px 0px #8493a6;
+  -webkit-box-shadow:0 0px 0px #8493a6;
+  box-shadow:0 0px 0px #8493a6;
+}
+
+#wrap .map-area
+{
+  height: 100%;
+  width: 100%;    
 }
 
 /*****************************************************************************/

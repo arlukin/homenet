@@ -93,7 +93,7 @@ var mystickybar=new expstickybar({
   id: "stickybar", //id of sticky bar DIV
   position:'top', //'top' or 'bottom'
   revealtype:'mouseover', //'mouseover' or 'manual'
-  peekamount: 35, //number of pixels to reveal when sticky bar is closed
+  peekamount: 25, //number of pixels to reveal when sticky bar is closed
   externalcontent:'', //path to sticky bar content file on your server, or "" if content is defined inline on the page
   speed:200 //duration of animation (in millisecs)
 })

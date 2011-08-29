@@ -143,18 +143,20 @@
 
 <body onload="initialize()">
 
-  <?php include("include/header.php"); ?>
+  <?php include("include/map-search.php"); ?>
+  
+  <?php $tab=1; include("include/header.php"); ?>
   
   <div id="wrap">
 
-    <?php include("include/map-search.php"); ?>
-
     <!-- Content - Begin -->
-    <div style="height: 100%; width:100%; min-width: 1258px;">
-      <div id="map_canvas" style="width: 100%;height:100%;min-width: 1258px;"></div>
+    <div class="map-area">
+      <div id="map_canvas" class="map-area"></div>
     </div>
     <!-- Content - End -->
   </div>
-  <?php include("include/footer.php"); ?>
+
+  <?php include("include/sticky-footer.php"); ?>
+
 </body>
 </html>

@@ -32,9 +32,10 @@
   </head>
 
   <body>
-    <div id="wrap">
 
-      <?php include("include/header.php"); ?>
+    <?php include("include/header.php"); ?>
+
+    <div id="wrap">
 
       <div id="main-area" class="border">
         <div id="leftcolumn">
@@ -68,8 +69,7 @@
 
           <p>
             Kontaktperson: Daniel Lindh<br>
-            Telefon: 073-626 54 49<br>
-            (måndag - fredag 11:00 - 17:00)<br>
+            Telefon: 073-626 54 49 (måndag 11:00 - fredag 17:00)<br>
             Epost: <a href="mailto:info@hyr-boende.com">info@hyr-boende.com</a><br>
             <br/>
             Amivono AB<br>

@@ -1,5 +1,5 @@
     <div id="footer">
-      <em>Senast uppdaterad Fredag, 20 Mars 2009 23:51</em>
+      <em>Senast uppdaterad Fredag, 29 Augusti 2011 23:51</em>
       
       <ul>
         <li><a href="">Komma igång</a> |</li>

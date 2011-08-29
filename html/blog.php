@@ -32,10 +32,10 @@
   </head>
 
   <body>
+
+    <?php include("include/header.php"); ?>
+
     <div id="wrap">
-
-      <?php include("include/header.php"); ?>
-
       <div id="leftcolumn">
         <div class="inner border flag">
           <ul>

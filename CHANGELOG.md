@@ -97,6 +97,8 @@ TODO
   http://www.komodomedia.com/
   http://craigsworks.com/projects/qtip2/demos/#ui-tabs
   http://css.maxdesign.com.au/listamatic/horizontal08.htm
+
+* Use on contentarea
   http://www.sethgunderson.com/listnew.html#
 
 * Lägg till "Vår filosofi"

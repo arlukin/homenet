@@ -31,11 +31,11 @@
 
   </head>
 
-  <body>    
+  <body>
+
+    <?php include("include/header.php"); ?>
+
     <div id="wrap">
-
-      <?php include("include/header.php"); ?>
-
       <div id="leftcolumn">
         <div class="inner border">
           <ul>

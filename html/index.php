@@ -42,11 +42,11 @@
   </head>
 
   <body>
-    <div id="wrap">
-      <?php include("include/map-search.phsp"); ?>
-      
-      <?php include("include/header.php"); ?>
+    <?php include("include/map-search.phsp"); ?>
 
+    <?php include("include/header.php"); ?>
+
+    <div id="wrap">
       <div id="content">
         <div class="inner border">          
 

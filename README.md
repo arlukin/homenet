@@ -1,18 +1,22 @@
-
+Credits
+=======
+* Thanks Santosh Setty (http://webdesigninfo.wordpress.com/) for your
+  glossy horizontal menu.
+  http://www.dynamicdrive.com/style/csslibrary/item/glossy_horizontal_menu/
 
 Konkurrenter
 ============
 
 Turistcenter syd
 ----------------
-http://www.turistcentersyd.se/ lŠgger ut sina bostŠder pŒ http://www.sverigesemester.com/.
+http://www.turistcentersyd.se/ lï¿½gger ut sina bostï¿½der pï¿½ http://www.sverigesemester.com/.
 
 http://sveaborg.cybercow.se/ad
 
 Specification
 =============
 
-* Spara bilder pŒ flickr?
+* Spara bilder pï¿½ flickr?
 
 Kolla: http://www.sverigesemester.com/semester/stuga-stugor/boende-2145/vinter-sommar-0/erbjudande-0/0-index.html
 
@@ -23,9 +27,9 @@ livinig_space
 max_people
 description
 minimum_rental_period
-minimum_rental_period_type [dag|vecka|mŒnad]
-change_day: {Sšndag}
-type  [LŠgenhet|hus|hotell|vandrarhem]
+minimum_rental_period_type [dag|vecka|mï¿½nad]
+change_day: {Sï¿½ndag}
+type  [Lï¿½genhet|hus|hotell|vandrarhem]
 bussiness_type [for_sale|rental]
 
 rooms
@@ -88,7 +92,7 @@ anmial_allowed
 
 
 Kommentarer {discus?}
-TillgŠngliga datum: och priser
+Tillgï¿½ngliga datum: och priser
 
 DATABASE
 ========
@@ -123,7 +127,7 @@ customer_id
 name
 phone
 
-…verlappade pris perioder?
+ï¿½verlappade pris perioder?
 SELECT
   sum(((to_date - $to) - ($from - from_date))*day_price) as price
 FROM

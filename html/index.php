@@ -11,8 +11,7 @@
 
     <!-- CSS - Begin -->
     <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />    
-    <link rel="stylesheet" type="text/css" href="/css/screen-index.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/screen-map-search.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen-index.css" media="screen" />    
     <!-- CSS - End -->
 
     <!-- JQuery - Begin -->
@@ -41,8 +40,7 @@
 
   </head>
 
-  <body>
-    <?php include("include/map-search.phsp"); ?>
+  <body>    
 
     <?php include("include/header.php"); ?>
 
@@ -163,11 +161,10 @@
             </a>
           </dd>
         </dl>
+      </div>
     </div>
 
-  </div>
-  
-  <?php include("include/footer.php"); ?>
+    <?php include("include/footer.php"); ?>
 
-</body>
+  </body>
 </html>
